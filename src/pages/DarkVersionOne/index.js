@@ -12,8 +12,8 @@ import {
   client09, client10, client11, client12, client13,
   item1, item2, item3, item4, item5, item6,
   gif1, gif2, gif3, gif4, gif5, gif6,
-  bg01, bg1, bg2, bg3, united, community,
-  work1, work2, work3, work4, work5, work6, work7, work8, work9, work10, work11, work12,
+  bgImage, bg1, bg2, bg3, united, community,
+  work1, work2, work3, work4, work5, work6, work7, work8, work9, work10, work11, work12, cianticMarketLogoLarge,
 } from '../../components/imageImport'
 
 const DarkVersionOne = () => {
@@ -434,29 +434,29 @@ const DarkVersionOne = () => {
       {/* Start Home */}
       <section
         className="bg-half-170 d-table w-100"
-        style={{ background: `url(${bg01}) background-position: center center` }}
+        style={{ background: `url(${bgImage}) background-position: center center` }}
       // style="background-image: url('images/bg/bg01.png'); background-position: center center;"
       >
-        <div className="bg-overlay bg-gradient-primary opacity-8"></div>
+        <div className="bg-overlay"> {/* Note: Class to add a gradient on top. (className="bg-overlay bg-gradient-primary opacity-8") */}
+        <img src={bgImage} className="img-fluid" alt="" />
+        </div>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-7 col-md-6">
               <div className="title-heading">
                 <h6 className="text-light title-dark fw-normal">
-                  Explore, Create & Collect NFTs
+                  Explore, Buy & Sell Anything You Want!
                 </h6>
                 <h4 className="heading text-white title-dark fw-bold mb-3">
                   Join The New Era of <br />{' '}
                   <span
                     className="typewrite"
                     data-period="2000"
-                    data-type='[ "Musics", "Digital Arts", "Illustrations", "Videos", "GIFs"]'
+                    data-type='[ "Electronics", "Software", "Fashion", "Digital Arts", "Illustrations", "Games", "Smart Home", "Health & Household"]'
                   ></span>
                 </h4>
                 <p className="text-white-50 para-desc mb-0 mb-0">
-                  We are a huge marketplace dedicated to connecting great
-                  artists of all Superex with their fans and unique token
-                  collectors!
+                  We are a marketplace dedicated to connecting <br />{' '} Buyers & Sellers from Sri Lanka at <br />{' '} Ciantic Market!
                 </p>
 
                 <div className="mt-4 pt-2">
@@ -464,7 +464,7 @@ const DarkVersionOne = () => {
                     href="/aboutus"
                     onClick={e => {
                       e.preventDefault()
-                      navigate('/aboutus')
+                      navigate('/explore-one')
                     }}
                     className="btn btn-pills btn-outline-light-white"
                   >
@@ -476,128 +476,7 @@ const DarkVersionOne = () => {
             {/*end slide*/}
 
             <div className="col-lg-5 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
-              <div className="card bg-white nft-items nft-primary img-skewed rounded-md shadow overflow-hidden mb-1 p-3">
-                <div className="d-flex justify-content-between">
-                  <div className="img-group">
-                    <a
-                      href="/creator-profile"
-                      onClick={e => {
-                        e.preventDefault()
-                        navigate('/creator-profile')
-                      }}
-                      className="user-avatar"
-                    >
-                      <img
-                        src={client08}
-                        alt="user"
-                        className="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle"
-                      />
-                    </a>
-                    <a
-                      href="/creator-profile"
-                      onClick={e => {
-                        e.preventDefault()
-                        navigate('/creator-profile')
-                      }}
-                      className="user-avatar ms-n3"
-                    >
-                      <img
-                        src={client05}
-                        alt="user"
-                        className="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle"
-                      />
-                    </a>
-                    <a
-                      href="/creator-profile"
-                      onClick={e => {
-                        e.preventDefault()
-                        navigate('/creator-profile')
-                      }}
-                      className="user-avatar ms-n3"
-                    >
-                      <img
-                        src={client06}
-                        alt="user"
-                        className="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle"
-                      />
-                    </a>
-                  </div>
-
-                  <span className="like-icon shadow-sm">
-                    <a
-                      href=""
-                      onClick={e => e.preventDefault()}
-                      className="text-muted icon"
-                    >
-                      <i className="mdi mdi-18px mdi-heart mb-0"></i>
-                    </a>
-                  </span>
-                </div>
-
-                <div className="nft-image rounded-md mt-3 position-relative overflow-hidden shadow">
-                  <a
-                    href="/item-detail-one"
-                    onClick={e => {
-                      e.preventDefault()
-                      navigate('/item-detail-one')
-                    }}
-                  >
-                    <img src={gif4} className="img-fluid" alt="" />
-                  </a>
-                  <div className="position-absolute top-0 start-0 m-2">
-                    <a
-                      href=""
-                      onClick={e => e.preventDefault()}
-                      className="badge badge-link bg-primary"
-                    >
-                      GIFs
-                    </a>
-                  </div>
-
-                  <div className="position-absolute top-0 end-0 m-2">
-                    <a
-                      href="/item-detail-one"
-                      onClick={e => {
-                        e.preventDefault()
-                        navigate('/item-detail-one')
-                      }}
-                      className="btn btn-pills btn-icon"
-                    >
-                      <i className="uil uil-shopping-cart-alt"></i>
-                    </a>
-                  </div>
-
-                  <div className="position-absolute bottom-0 start-0 m-2 bg-gradient-primary text-white title-dark rounded-pill px-3 h5">
-                    <i className="uil uil-clock"></i>{' '}
-                    <Countdown
-                      date={'Sep 30, 2022 1:5:2'}
-                      renderer={({ days, hours, minutes, seconds }) => (
-                        <span>
-                          {days}:{hours}:{minutes}:{seconds}
-                        </span>
-                      )}
-                    />
-                  </div>
-                </div>
-
-                <div className="card-body content position-relative p-0 mt-3">
-                  <a
-                    href="/item-detail-one"
-                    onClick={e => {
-                      e.preventDefault()
-                      navigate('/item-detail-one')
-                    }}
-                    className="title text-dark h5"
-                  >
-                    Deep Sea Phantasy
-                  </a>
-
-                  <div className="d-flex justify-content-between mt-2">
-                    <small className="rate fw-bold">20.5 ETH</small>
-                    <small className="text-dark fw-bold">1 out of 10</small>
-                  </div>
-                </div>
-              </div>
+              <img src={cianticMarketLogoLarge} className="img-fluid" alt="" />
             </div>
             {/*end slide*/}
           </div>
@@ -1134,111 +1013,6 @@ const DarkVersionOne = () => {
                   </div>
                 )
               })}
-              {/*end col*/}
-            </div>
-            {/*end row*/}
-          </div>
-          {/*end container*/}
-
-          <div className="container mt-100 mt-60">
-            <div className="row justify-content-center">
-              <div className="col">
-                <div className="section-title text-center mb-5 pb-3">
-                  <h4 className="title mb-4">Latest Blogs</h4>
-                  <p className="text-muted para-desc mb-0 mx-auto">
-                    We are a huge marketplace dedicated to connecting great
-                    artists of all Superex with their fans and unique token
-                    collectors!
-                  </p>
-                </div>
-              </div>
-              {/*end col*/}
-            </div>
-            {/*end row*/}
-
-            <div className="row g-4">
-              {blogList?.map((data, index) => {
-                return (
-                  <div className="col-lg-4 col-md-6" key={index * 5}>
-                    <div className="card blog blog-primary shadow rounded-md overflow-hidden">
-                      <div className="position-relative">
-                        <img
-                          src={data?.image}
-                          className="img-fluid rounded-md"
-                          alt=""
-                        />
-                        <div className="position-absolute top-0 end-0 m-3">
-                          <span className="like-icon shadow-sm">
-                            <a
-                              href=""
-                              onClick={e => e.preventDefault()}
-                              className="text-muted icon"
-                            >
-                              <i className="mdi mdi-18px mdi-heart mb-0"></i>
-                            </a>
-                          </span>
-                        </div>
-                      </div>
-                      <div className="card-body position-relative p-4">
-                        <a
-                          href=""
-                          className="badge tag gradient rounded-md fw-bold"
-                        >
-                          {data?.type}
-                        </a>
-
-                        <ul className="list-unstyled mt-2">
-                          <li className="list-inline-item text-muted small me-3">
-                            <i className="uil uil-calendar-alt text-dark h6 me-1"></i>
-                            20th January, 2022
-                          </li>
-                          <li className="list-inline-item text-muted small">
-                            <i className="uil uil-clock text-dark h6 me-1"></i>5
-                            min read
-                          </li>
-                        </ul>
-                        <a
-                          href="/blog-detail"
-                          onClick={e => {
-                            e.preventDefault()
-                            navigate('/blog-detail')
-                          }}
-                          className="text-dark title h5 mt-3"
-                        >
-                          {data?.title}
-                        </a>
-
-                        <div className="mt-3 d-flex justify-content-between align-items-center">
-                          <a
-                            href="/blog-detail"
-                            onClick={e => {
-                              e.preventDefault()
-                              navigate('/blog-detail')
-                            }}
-                            className="btn btn-link text-muted"
-                          >
-                            Read more <FiArrowRight className="fea icon-sm" />
-                          </a>
-                          <span className="text-muted fs-6">
-                            by{' '}
-                            <a
-                              href="/creator-profile"
-                              onClick={e => {
-                                e.preventDefault()
-                                navigate('/creator-profile')
-                              }}
-                              className="link"
-                            >
-                              {data?.createdBy}
-                            </a>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )
-              })}
-
               {/*end col*/}
             </div>
             {/*end row*/}

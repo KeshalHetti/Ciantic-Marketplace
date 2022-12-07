@@ -6,6 +6,7 @@ import Choices from 'choices.js'
 import Countdown from 'react-countdown'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
+import { cianticMarketLogo } from '../../components/imageImport'
 import StyleSwitcher from '../../components/StyleSwitcher'
 import {
   client01, client02, client03, client04, client05, client06, client07, client08,
@@ -301,18 +302,26 @@ const DarkVersionFour = () => {
               {/* <iframe src="https://player.vimeo.com/video/502163294?background=1&autoplay=1&loop=1&byline=0&title=0"></iframe> */}
               {/*Note: Vimeo Embed Background Video*/}
 
-              <iframe src="https://www.youtube.com/embed/nULr2Oucw6U?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1"></iframe>
+              {/* <iframe src="https://www.youtube.com/embed/OfeDhzMgp7U?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1"></iframe> */}
+              {/* <iframe src="https://www.youtube.com/embed/nULr2Oucw6U?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1"></iframe> */}
               {/*Note: Youtube Embed Background Video*/}
             </div>
             <div className="bg-overlay bg-linear-gradient-2"></div>
             <div className="row justify-content-center my-5">
               <div className="col-12">
                 <div className="title-heading text-center px-4">
-                  <h4 className="display-6 text-white title-dark fw-medium mb-3">
-                    The Best Place <br /> to{' '}
+                  {/*  Start Logo  */}
+                <div className="text-center">
+                  <a href="">
+                    <img src={cianticMarketLogo} alt="" />
+                  </a>
+                </div>
+                {/*  End Logo  */}
+                  {/* <h4 className="display-6 text-white title-dark fw-medium mb-3">
+                    <br />The Best Place to{' '}
                     <span className="text-gradient-primary">Buy & Sell</span>{' '}
                     <br />Anything you want!
-                  </h4>
+                  </h4> */}
                   {/* <p className="text-white title-dark mb-0">
                     Discover limited-edition digital arts. Create, Sell and Buy
                     now.
@@ -433,7 +442,7 @@ const DarkVersionFour = () => {
                 <div className="col" key={data?.title}>
                   <div className="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
                     <div className="d-flex justify-content-between">
-                      {/* <div className="img-group">
+                       {/* <div className="img-group">
                         <a
                           href="/creator-profile"
                           onClick={e => {
@@ -476,7 +485,7 @@ const DarkVersionFour = () => {
                             className="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle"
                           />
                         </a>
-                      </div> */}
+                      </div>*/}
 
                       <span className="like-icon shadow-sm">
                         <a
@@ -487,7 +496,7 @@ const DarkVersionFour = () => {
                           <i className="mdi mdi-18px mdi-heart mb-0"></i>
                         </a>
                       </span>
-                    </div>
+                    </div> 
 
                     <div className="nft-image rounded-md mt-3 position-relative overflow-hidden">
                       <a

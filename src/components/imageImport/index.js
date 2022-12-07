@@ -128,7 +128,7 @@ import set from '../../assets/images/wallet/set.svg'
 import Uniswap from '../../assets/images/wallet/uniswap.svg'
 import Zerion from '../../assets/images/wallet/zerion.svg'
 import logoDark from '../../assets/images/logo-dark.png'
-import whiteLogo from '../../assets/images/logo-white.png'
+import whiteLogo from '../../assets/images/logo-main.png'
 import itemDetail from '../../assets/images/items/item-detail.jpg'
 import itemDetail1 from '../../assets/images/items/item-detail-1.jpg'
 import ErrorImage from '../../assets/images/error.png'
@@ -138,6 +138,9 @@ import playStore from '../../assets/images/playstore.png'
 import app from '../../assets/images/app.png'
 import iconLogo from '../../assets/images/icon-logo-64.png'
 import character from '../../assets/images/character.png'
+import cianticLogo from '../../assets/images/logo-main.png'
+import cianticMarketLogo from '../../assets/images/logo-market.png'
+import cianticMarketLogoLarge from '../../assets/images/logo-market-big.png'
 
 export {
   bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9, bg10, bg11, bg12,
@@ -152,5 +155,5 @@ export {
   about, cta, creator, logo48, single, lightLogo, office, ofcDesk, prodToCard,
   MetaMask_Fox, aave, Airswap, Compound, DDEX, defiSaver, dYdX, IDEX, Kyber, Maker, NUO, PoolTogether, Sablier, set, Uniswap, Zerion, logoDark, whiteLogo,
   itemDetail, itemDetail1, ErrorImage, united, community,
-  playStore, app, iconLogo, character,
+  playStore, app, iconLogo, character,cianticLogo,cianticMarketLogo,cianticMarketLogoLarge,
 }
