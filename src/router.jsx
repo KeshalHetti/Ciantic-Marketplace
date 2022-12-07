@@ -91,7 +91,7 @@ export default function Router() {
         <Route exact path="/index-dark" element={<DarkVersionOne />} />
         <Route exact path="/index-dark-rtl" element={<DarkVersionOne />} />
         <Route exact path="/index" element={<DarkVersionOne />} />
-        <Route exact path="/" element={<DarkVersionFour />} />
+        <Route exact path="/" element={<DarkVersionOne />} />
         <Route exact path="/index-rtl" element={<DarkVersionOne />} />
 
       {/*   <Route exact path="/index-two-dark" element={<DarkVersionTwo />} />
