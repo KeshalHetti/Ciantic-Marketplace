@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'
-import { whiteLogo } from '../../components/imageImport'
+import { cianticLogo } from '../../components/imageImport'
 import StyleSwitcher from '../../components/StyleSwitcher'
 
 const SignUp = () => {
@@ -22,10 +22,10 @@ const SignUp = () => {
       {/*  Hero Start  */}
       <section className="position-relative">
         <div className="bg-video-wrapper">
-          <iframe src="https://player.vimeo.com/video/502163294?background=1&autoplay=1&loop=1&byline=0&title=0"></iframe>
+          {/* <iframe src="https://player.vimeo.com/video/502163294?background=1&autoplay=1&loop=1&byline=0&title=0"></iframe> */}
           {/* Note: Vimeo Embed Background Video */}
 
-          {/*  <iframe src="https://www.youtube.com/embed/yba7hPeTSjk?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1"></iframe>  */}
+          <iframe src="https://www.youtube.com/embed/OfeDhzMgp7U?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1"></iframe>
           {/* Note: Youtube Embed Background Video */}
         </div>
         <div className="bg-overlay bg-linear-gradient-2"></div>
@@ -36,7 +36,7 @@ const SignUp = () => {
                 {/*  Start Logo  */}
                 <div className="text-center">
                   <a href="">
-                    <img src={whiteLogo} alt="" />
+                    <img src={cianticLogo} alt="" />
                   </a>
                 </div>
                 {/*  End Logo  */}
@@ -151,10 +151,7 @@ const SignUp = () => {
                 <div className="text-center">
                   <small className="mb-0 text-light title-dark">
                     © <script>document.write(new Date().getFullYear())</script>{' '}
-                    Superex. Design & Develop with{' '}
-                    <i className="mdi mdi-heart text-danger"></i> by{' '}
-                    
-                    .
+                    Designed & Developed By Ciantic.
                   </small>
                 </div>
                 {/*  End Footer  */}
