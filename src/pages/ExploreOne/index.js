@@ -4,7 +4,7 @@ import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import StyleSwitcher from '../../components/StyleSwitcher'
 import {
-  bg01, item1, item2, item3, item4, item5, item6,
+  bgImage, item1, item2, item3, item4, item5, item6,
   gif1, gif2, gif3, gif4, gif5, gif6,
   cta, client05, client06, client08
 } from '../../components/imageImport'
@@ -109,7 +109,7 @@ const ExploreOne = () => {
       {/* Start Home */}
       <section
         className="bg-half-170 d-table w-100"
-        style={{ background: `url(${bg01}) bottom` }}
+        style={{ background: `url(${bgImage}) bottom` }}
       >
         <div className="bg-overlay bg-gradient-overlay-2"></div>
         <div className="container">
@@ -120,7 +120,7 @@ const ExploreOne = () => {
                   Marketplace
                 </h5>
                 <p className="text-white-50 para-desc mx-auto mb-0">
-                  Explore the latest NFTs digital product
+                  Explore Cianitc Marketplace!
                 </p>
               </div>
             </div>
@@ -142,7 +142,7 @@ const ExploreOne = () => {
                       navigate('/index')
                     }}
                   >
-                    Superex
+                    Cianitc Market
                   </a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
@@ -382,9 +382,9 @@ const ExploreOne = () => {
                     <h4 className="display-6 fw-bold text-white title-dark mb-0">
                       Get{' '}
                       <span className="text-gradient-primary fw-bold">
-                        Free collections{' '}
+                        Our Premium Tag{' '}
                       </span>{' '}
-                      <br /> with your subscription
+                      <br /> by Joining Our Subscription
                     </h4>
 
                     <div className="mt-4">
