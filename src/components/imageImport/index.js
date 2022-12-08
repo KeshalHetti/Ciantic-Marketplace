@@ -155,5 +155,5 @@ export {
   about, cta, creator, logo48, single, lightLogo, office, ofcDesk, prodToCard,
   MetaMask_Fox, aave, Airswap, Compound, DDEX, defiSaver, dYdX, IDEX, Kyber, Maker, NUO, PoolTogether, Sablier, set, Uniswap, Zerion, logoDark, whiteLogo,
   itemDetail, itemDetail1, ErrorImage, united, community,
-  playStore, app, iconLogo, character,cianticLogo,cianticMarketLogo,cianticMarketLogoLarge,
+  playStore, app, iconLogo, character, cianticLogo, cianticMarketLogo, cianticMarketLogoLarge,
 }
