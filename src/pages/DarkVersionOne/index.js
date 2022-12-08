@@ -12,7 +12,7 @@ import {
   client09, client10, client11, client12, client13,
   item1, item2, item3, item4, item5, item6,
   gif1, gif2, gif3, gif4, gif5, gif6,
-  bgImage, bg1, bg2, bg3, united, community,
+  bgImage, bg1, bg2, bg3, bg02, united, community,
   work1, work2, work3, work4, work5, work6, work7, work8, work9, work10, work11, work12, cianticMarketLogoLarge,
 } from '../../components/imageImport'
 
@@ -438,7 +438,7 @@ const DarkVersionOne = () => {
       // style="background-image: url('images/bg/bg01.png'); background-position: center center;"
       >
         <div className="bg-overlay"> {/* Note: Class to add a gradient on top. (className="bg-overlay bg-gradient-primary opacity-8") */}
-        <img src={bgImage} className="img-fluid" alt="" />
+        <img src={bg02} className="img-fluid" alt="" />
         </div>
         <div className="container">
           <div className="row align-items-center">
@@ -490,120 +490,15 @@ const DarkVersionOne = () => {
       {/* Start */}
       <section className="section">
         <div className="container">
-          <div className="row align-items-end mb-4 pb-2">
-            <div className="col-md-8">
-              <div className="section-title">
-                <h4 className="title mb-2">Best Creators & Sellers</h4>
-                <p className="text-muted mb-0">
-                  Best sellers of the week's NFTs
-                </p>
-              </div>
-            </div>
-            {/*end slide*/}
-
-            <div className="col-md-4">
-              <div className="text-end d-md-block d-none">
-                <a
-                  href="/creators"
-                  onClick={e => {
-                    e.preventDefault()
-                    navigate('/creators')
-                  }}
-                  className="btn btn-link primary text-dark"
-                >
-                  See More <i className="uil uil-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-            {/*end slide*/}
-          </div>
-          {/*end row*/}
-
-          <div className="row">
-            <div className="col-12 mt-3">
-              <div className="tiny-five-item-nav-arrow">
-                {creator?.map((data, index) => {
-                  return (
-                    <div className="tiny-slide" key={data?.name}>
-                      <div className="card creators creators-two creator-primary rounded-md shadow overflow-hidden mx-2 my-3">
-                        <div
-                          className="py-5"
-                          style={{ background: `url(${data?.background})` }}
-                        ></div>
-                        <div className="position-relative mt-n5">
-                          <img
-                            src={data?.Image}
-                            className="avatar avatar-md-md rounded-pill shadow-sm bg-light img-thumbnail mx-auto d-block"
-                            alt=""
-                          />
-
-                          <div className="content text-center pt-2 p-4">
-                            <a
-                              href="/creator-profile"
-                              onClick={e => {
-                                e.preventDefault()
-                                navigate('/creator-profile')
-                              }}
-                              className="text-dark h6 name d-block mb-0"
-                            >
-                              {data?.name}
-                            </a>
-                            <small className="text-muted">
-                              @{data?.author}
-                            </small>
-                            <div className="mt-3">
-                              <a
-                                href=""
-                                onClick={e => e.preventDefault()}
-                                className="btn btn-pills btn-soft-primary"
-                              >
-                                Follow
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  )
-                })}
-                {/*end slide*/}
-              </div>
-            </div>
-            {/*end col*/}
-          </div>
-          {/*end row*/}
-
-          <div className="row">
-            <div className="col">
-              <div className="text-center d-md-none d-block">
-                <a
-                  href="/creators"
-                  onClick={e => {
-                    e.preventDefault()
-                    navigate('/creators')
-                  }}
-                  className="btn btn-link primary text-dark"
-                >
-                  See More <i className="uil uil-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-            {/*end col*/}
-          </div>
-          {/*end row*/}
-        </div>
-        {/*end container*/}
-
-        <div className="container mt-100 mt-60">
           <div className="row justify-content-center">
             <div className="col">
               <div className="section-title text-center mb-4 pb-2">
-                <h4 className="title mb-4">Explore Hot Products</h4>
-                <p className="text-muted para-desc mb-0 mx-auto">
+                <h4 className="title mb-4">Explore Our Products</h4>
+                {/* <p className="text-muted para-desc mb-0 mx-auto">
                   We are a huge marketplace dedicated to connecting great
                   artists of all Superex with their fans and unique token
                   collectors!
-                </p>
+                </p> */}
               </div>
             </div>
             {/*end col*/}
@@ -803,113 +698,116 @@ const DarkVersionOne = () => {
             })}
           </div>
         </div>
-        <div>
-          <div className="container-fluid mt-100 mt-60">
-            <div className="row px-0">
-              <div className="bg-half-100 bg-gradient-primary">
-                <div className="container">
-                  <div className="row justify-content-center">
-                    <div className="col">
-                      <div className="section-title text-center mb-4 pb-2">
-                        <h4 className="title text-white title-dark mb-4">
-                          Join the fastest growing Superex NFTs <br /> with more
-                          than 2000+ NFTs
-                        </h4>
-                        <p className="text-white-50 para-desc mb-0 mx-auto">
-                          We are a huge marketplace dedicated to connecting
-                          great artists of all Superex with their fans and
-                          unique token collectors!
-                        </p>
-                      </div>
-                    </div>
-                    {/*end col*/}
-                  </div>
-                  {/*end row*/}
+        {/*end container*/}
 
-                  <div className="row">
-                    <div className="col-md-6 mt-4 pt-2">
-                      <div className="card p-4 rounded-md shadow bg-white">
-                        <h4 className="mb-4">Join our community</h4>
-                        <p className="text-muted mb-0">
-                          We are a huge marketplace dedicated to connecting
-                          great artists of all Superex.
-                        </p>
-
-                        <div className="mt-3">
-                          <a
-                            href="/aboutus"
-                            onClick={e => {
-                              e.preventDefault()
-                              navigate('/aboutus')
-                            }}
-                            className="btn btn-link primary text-dark"
-                          >
-                            Read More <i className="uil uil-arrow-right"></i>
-                          </a>
-                        </div>
-                        <div className="py-4"></div>
-                        <div className="position-absolute bottom-0 end-0">
-                          <img
-                            src={community}
-                            className="avatar avatar-medium opacity-05"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    {/*end col*/}
-
-                    <div className="col-md-6 mt-4 pt-2">
-                      <div className="card p-4 rounded-md shadow bg-white">
-                        <h4 className="mb-4">Learn more about Superex</h4>
-                        <p className="text-muted mb-0">
-                          We are a huge marketplace dedicated to connecting
-                          great artists of all Superex.
-                        </p>
-
-                        <div className="mt-3">
-                          <a
-                            href="/aboutus"
-                            onClick={e => {
-                              e.preventDefault()
-                              navigate('/aboutus')
-                            }}
-                            className="btn btn-link primary text-dark"
-                          >
-                            Read More <i className="uil uil-arrow-right"></i>
-                          </a>
-                        </div>
-                        <div className="py-4"></div>
-                        <div className="position-absolute bottom-0 end-0">
-                          <img
-                            src={united}
-                            className="avatar avatar-medium opacity-05"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    {/*end col*/}
-                  </div>
-                  {/*end row*/}
-                </div>
-                {/*end container*/}
+        {/* <div className="container mt-100  mt-60">
+          <div className="row align-items-end mb-4 pb-2">
+            <div className="col-md-8">
+              <div className="section-title">
+                <h4 className="title mb-2">Best Creators & Sellers</h4>
+                <p className="text-muted mb-0">
+                  Best sellers of the week's NFTs
+                </p>
               </div>
             </div>
-            {/*end row*/}
-          </div>
-          {/*end container*/}
 
+            <div className="col-md-4">
+              <div className="text-end d-md-block d-none">
+                <a
+                  href="/creators"
+                  onClick={e => {
+                    e.preventDefault()
+                    navigate('/creators')
+                  }}
+                  className="btn btn-link primary text-dark"
+                >
+                  See More <i className="uil uil-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12 mt-3">
+              <div className="tiny-five-item-nav-arrow">
+                {creator?.map((data, index) => {
+                  return (
+                    <div className="tiny-slide" key={data?.name}>
+                      <div className="card creators creators-two creator-primary rounded-md shadow overflow-hidden mx-2 my-3">
+                        <div
+                          className="py-5"
+                          style={{ background: `url(${data?.background})` }}
+                        ></div>
+                        <div className="position-relative mt-n5">
+                          <img
+                            src={data?.Image}
+                            className="avatar avatar-md-md rounded-pill shadow-sm bg-light img-thumbnail mx-auto d-block"
+                            alt=""
+                          />
+
+                          <div className="content text-center pt-2 p-4">
+                            <a
+                              href="/creator-profile"
+                              onClick={e => {
+                                e.preventDefault()
+                                navigate('/creator-profile')
+                              }}
+                              className="text-dark h6 name d-block mb-0"
+                            >
+                              {data?.name}
+                            </a>
+                            <small className="text-muted">
+                              @{data?.author}
+                            </small>
+                            <div className="mt-3">
+                              <a
+                                href=""
+                                onClick={e => e.preventDefault()}
+                                className="btn btn-pills btn-soft-primary"
+                              >
+                                Follow
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col">
+              <div className="text-center d-md-none d-block">
+                <a
+                  href="/creators"
+                  onClick={e => {
+                    e.preventDefault()
+                    navigate('/creators')
+                  }}
+                  className="btn btn-link primary text-dark"
+                >
+                  See More <i className="uil uil-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> */}
+        {/*end container*/}
+
+        <div>
           <div className="container mt-100 mt-60">
             <div className="row justify-content-center">
               <div className="col">
                 <div className="section-title text-center mb-5 pb-3">
                   <h4 className="title mb-4">Live Auctions</h4>
-                  <p className="text-muted para-desc mb-0 mx-auto">
+                  {/* <p className="text-muted para-desc mb-0 mx-auto">
                     We are a huge marketplace dedicated to connecting great
                     artists of all Superex with their fans and unique token
                     collectors!
-                  </p>
+                  </p> */}
                 </div>
               </div>
               {/*end col*/}
