@@ -440,7 +440,7 @@ const DarkVersionOne = () => {
         <div className="bg-overlay"> {/* Note: Class to add a gradient on top. (className="bg-overlay bg-gradient-primary opacity-8") */}
         <img src={bg02} className="img-fluid" alt="" />
         </div>
-        <div className="container">
+        <div className="container mt-100">
           <div className="row align-items-center">
             <div className="col-lg-7 col-md-6">
               <div className="title-heading">
@@ -489,7 +489,7 @@ const DarkVersionOne = () => {
 
       {/* Start */}
       <section className="section">
-        <div className="container">
+        <div className="container ">
           <div className="row justify-content-center">
             <div className="col">
               <div className="section-title text-center mb-4 pb-2">
