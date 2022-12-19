@@ -1,7 +1,7 @@
 import React from 'react'
 // import toggleSwitcher from '../StyleSwitcher'
 const StyleSwitcher = () => {
-    const toggleSwitcher = () => {
+    /* const toggleSwitcher = () => {
         var i = document.getElementById('style-switcher')
         if (i) {
             if (i.style.left === '-189px') {
@@ -10,9 +10,9 @@ const StyleSwitcher = () => {
                 i.style.left = '-189px'
             }
         }
-    }
+    } */
     return (
-        <div id="style-switcher" className="bg-light border p-3 pt-2 pb-2" onClick={(e) => { e.preventDefault(); toggleSwitcher() }}>
+        <div id="style-switcher" className="bg-light border p-3 pt-2 pb-2">
             {/* Style switcher  */}
             {/* <div className="content">
                 <h6 className="title text-center">Select Your Color</h6>
