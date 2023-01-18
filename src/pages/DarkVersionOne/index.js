@@ -152,26 +152,7 @@ const DarkVersionOne = () => {
       filter: ['all', 'music'],
     },
   ]
-  const blogList = [
-    {
-      image: bg1,
-      title: 'Mindfulness Activities for Kids & Toddlers with NFT',
-      createdBy: '@callyjoe',
-      type: 'Arts',
-    },
-    {
-      image: bg2,
-      title: 'Save Thousands Of Lives Through This NFT',
-      createdBy: '@kristyhoney',
-      type: 'Illustration',
-    },
-    {
-      image: bg3,
-      title: 'A place where technology meets craftsmanship',
-      createdBy: '@pandaone',
-      type: 'Music',
-    },
-  ]
+
 
   const [allData, setAllData] = useState(AuctionData)
   const [type, setType] = useState('all')
