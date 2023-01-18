@@ -13,84 +13,100 @@ const ExploreOne = () => {
   const navigate = useNavigate()
   const AuctionData = [
     {
-      image: gif1,
-      title: 'Deep Sea Phantasy',
-      type: 'GIFs',
-      filter: ['all', 'games'],
-    },
-    {
       image: item1,
       title: 'CyberPrimal 042 LAN',
+      price: 10000,
       time: '',
       type: 'Arts',
       filter: ['all', 'art'],
     },
     {
-      image: gif2,
-      title: 'Crypto Egg Stamp #5',
+      image: item1,
+      title: 'CyberPrimal 042 LAN',
+      price: 30000,
       time: '',
-      type: 'Games',
-      filter: ['all', 'music', 'meme'],
-    },
-    {
-      image: item2,
-      title: 'Colorful Abstract Painting',
-      type: '',
-      filter: ['all', 'video'],
-    },
-    {
-      image: item3,
-      title: 'Liquid Forest Princess',
-      time: '',
-      type: '',
-      filter: ['all', 'video', 'meme'],
-    },
-    {
-      image: gif3,
-      title: 'Spider Eyes Modern Art',
-      type: 'GIFs',
-      filter: ['all', 'games'],
-    },
-    {
-      image: item4,
-      title: 'Synthwave Painting',
-      time: '',
-      type: '',
+      type: 'Arts',
       filter: ['all', 'art'],
     },
     {
-      image: gif4,
-      title: 'Contemporary Abstract',
+      image: item1,
+      title: 'CyberPrimal 042 LAN',
+      price: 50000,
       time: '',
-      type: 'GIFs',
-      filter: ['all', 'music'],
-    },
-    {
-      image: item5,
-      title: 'Valkyrie Abstract Art',
-      time: '',
-      type: '',
-      filter: ['all', 'video', 'meme'],
-    },
-    {
-      image: gif5,
-      title: 'The girl with the firefly',
-      time: '',
-      type: '',
+      type: 'Arts',
       filter: ['all', 'art'],
     },
     {
-      image: item6,
-      title: 'Dodo hide the seek',
+      image: item1,
+      title: 'CyberPrimal 042 LAN',
+      price: 60000,
       time: '',
-      type: '',
-      filter: ['all', 'games'],
+      type: 'Arts',
+      filter: ['all', 'art'],
     },
     {
-      image: gif6,
-      title: 'Pinky Ocean',
-      type: '',
-      filter: ['all', 'music'],
+      image: item1,
+      title: 'CyberPrimal 042 LAN',
+      price: 20000,
+      time: '',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item1,
+      title: 'CyberPrimal 042 LAN',
+      price: 90000,
+      time: '',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item1,
+      title: 'CyberPrimal 042 LAN',
+      price: 90000,
+      time: '',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item1,
+      title: 'CyberPrimal 042 LAN',
+      price: 90000,
+      time: '',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item1,
+      title: 'CyberPrimal 042 LAN',
+      price: 90000,
+      time: '',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item1,
+      title: 'CyberPrimal 042 LAN',
+      price: 90000,
+      time: '',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item1,
+      title: 'CyberPrimal 042 LAN',
+      price: 90000,
+      time: '',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item1,
+      title: 'CyberPrimal 042 LAN',
+      price: 90000,
+      time: '',
+      type: 'Arts',
+      filter: ['all', 'art'],
     },
   ]
 
@@ -325,11 +341,11 @@ const ExploreOne = () => {
                           }}
                           className="title text-dark h6"
                         >
-                          Deep Sea Phantasy
+                          {data?.title}
                         </a>
 
                         <div className="d-flex justify-content-between mt-2">
-                          <small className="rate fw-bold">20.5 ETH</small>
+                          <small className="rate fw-bold">{data?.price}</small>
                           <small className="text-dark fw-bold">
                             1 out of 10
                           </small>
