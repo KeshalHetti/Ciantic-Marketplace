@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "choices.js": "^10.1.0",
+    "firebase": "^9.15.0",
     "jquery": "^3.6.0",
     "react": "^17.0.2",
     "react-countdown": "^2.3.2",
