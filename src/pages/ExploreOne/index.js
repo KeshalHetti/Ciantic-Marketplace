@@ -208,7 +208,7 @@ const ExploreOne = () => {
                     // data-group="games"
                     onClick={() => setFilter('games')}
                   >
-                    <i className="uil uil-volleyball"></i> Games
+                    <i className="uil uil-volleyball"></i> Electronics
                   </li>
                   <li
                     className={`list-inline-item categories position-relative text-dark ${type === 'art' ? 'active' : ''
@@ -216,7 +216,7 @@ const ExploreOne = () => {
                     // data-group="art"
                     onClick={() => setFilter('art')}
                   >
-                    <i className="uil uil-chart-pie-alt"></i> Art
+                    <i className="uil uil-chart-pie-alt"></i> Software
                   </li>
                   <li
                     className={`list-inline-item categories position-relative text-dark ${type === 'music' ? 'active' : ''
@@ -224,7 +224,7 @@ const ExploreOne = () => {
                     // data-group="music"
                     onClick={() => setFilter('music')}
                   >
-                    <i className="uil uil-music"></i> Music
+                    <i className="uil uil-music"></i> Household
                   </li>
                   <li
                     className={`list-inline-item categories position-relative text-dark ${type === 'video' ? 'active' : ''
@@ -232,7 +232,7 @@ const ExploreOne = () => {
                     // data-group="video"
                     onClick={() => setFilter('video')}
                   >
-                    <i className="uil uil-camera-plus"></i> Video
+                    <i className="uil uil-camera-plus"></i> Fashion
                   </li>
                   <li
                     className={`list-inline-item categories position-relative text-dark ${type === 'meme' ? 'active' : ''
@@ -240,7 +240,15 @@ const ExploreOne = () => {
                     // data-group="memes"
                     onClick={() => setFilter('meme')}
                   >
-                    <i className="uil uil-rocket"></i> Memes
+                    <i className="uil uil-rocket"></i> Equipment
+                  </li>
+                  <li
+                    className={`list-inline-item categories position-relative text-dark ${type === 'meme' ? 'active' : ''
+                      }`}
+                    // data-group="memes"
+                    onClick={() => setFilter('')}
+                  >
+                    <i className="uil uil-rocket"></i> Health Care
                   </li>
                 </ul>
               </div>
