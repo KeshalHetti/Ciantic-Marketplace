@@ -461,24 +461,6 @@ const Navbar = () => {
 
               <li>
                 <a
-                  href="/activity"
-                  onClick={e => {
-                    e.preventDefault()
-                    setTimeout(() => {
-                      activateMenu()
-                      toggleSwitcher(false)
-                    }, 1000)
-                    navigate('/activity')
-                  }}
-                  className="sub-menu-item"
-                >
-                  {' '}
-                  Activity
-                </a>
-              </li>
-
-              <li>
-                <a
                   href="/explore-one"
                   onClick={e => {
                     e.preventDefault()
@@ -492,6 +474,24 @@ const Navbar = () => {
                 >
                   {' '}
                   Marketplace
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/activity"
+                  onClick={e => {
+                    e.preventDefault()
+                    setTimeout(() => {
+                      activateMenu()
+                      toggleSwitcher(false)
+                    }, 1000)
+                    navigate('/activity')
+                  }}
+                  className="sub-menu-item"
+                >
+                  {' '}
+                  Activity
                 </a>
               </li>
 
