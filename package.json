@@ -1,6 +1,6 @@
 {
-  "name": "superx",
-  "version": "0.1.0",
+  "name": "ciantic",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "choices.js": "^10.1.0",
