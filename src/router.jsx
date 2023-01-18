@@ -25,14 +25,7 @@ import Activity from './pages/Activity'
 import ItemDetailOne from './pages/ItemDetailOne'
 import ItemDetailTwo from './pages/ItemDetailTwo'
 import Auction from './pages/Auction'
-import ExploreFour from './pages/ExploreFour'
-import ExploreThree from './pages/ExploreThree'
-import ExploreTwo from './pages/ExploreTwo'
 import DarkVersionOne from './pages/DarkVersionOne'
-import DarkVersionTwo from './pages/DarkVersionTwo'
-import DarkVersionFive from './pages/DarkVersionFive'
-import DarkVersionThree from './pages/DarkVersionThree'
-import DarkVersionFour from './pages/DarkVersionFour'
 import BlogSidebar from './pages/BlogSidebar'
 import ExploreOne from './pages/ExploreOne'
 import CreatorProfileEdit from './pages/CreatorProfileEdit'
@@ -83,9 +76,6 @@ export default function Router() {
         <Route exact path="/item-detail-one" element={<ItemDetailOne />} />
         <Route exact path="/item-detail-two" element={<ItemDetailTwo />} />
         <Route exact path="/auction" element={<Auction />} />
-        <Route exact path="/explore-four" element={<ExploreFour />} />
-        <Route exact path="/explore-three" element={<ExploreThree />} />
-        <Route exact path="/explore-two" element={<ExploreTwo />} />
         <Route exact path="/explore-one" element={<ExploreOne />} />
 
         <Route exact path="/index-dark" element={<DarkVersionOne />} />
