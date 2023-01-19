@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
-import StyleSwitcher from '../../components/StyleSwitcher'
 import { bg10, single, logo48 } from '../../components/imageImport'
 
 const BlogDetail = () => {
@@ -150,9 +149,6 @@ const BlogDetail = () => {
 
       {/* footer */}
       <Footer />
-
-      {/* Style switcher  */}
-      <StyleSwitcher />
     </>
   )
 }

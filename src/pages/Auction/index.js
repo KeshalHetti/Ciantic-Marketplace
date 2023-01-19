@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import Countdown from 'react-countdown'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
-import StyleSwitcher from '../../components/StyleSwitcher'
 import {
   item1, item2, item3, item4, gif1, gif2, gif3, gif4,
   cta, bg01,
@@ -176,10 +175,10 @@ const Auction = () => {
 
                     <div className="nft-image rounded-md mt-3 position-relative overflow-hidden">
                       <a
-                        href="/item-detail-one"
+                        href="/item-detail-two"
                         onClick={e => {
                           e.preventDefault()
-                          navigate('/item-detail-one')
+                          navigate('/item-detail-two')
                         }}
                       >
                         <img src={data?.image} className="img-fluid" alt="" />
@@ -220,10 +219,10 @@ const Auction = () => {
 
                     <div className="card-body content position-relative p-0 mt-3">
                       <a
-                        href="/item-detail-one"
+                        href="/item-detail-two"
                         onClick={e => {
                           e.preventDefault()
-                          navigate('/item-detail-one')
+                          navigate('/item-detail-two')
                         }}
                         className="title text-dark h6"
                       >
@@ -238,10 +237,10 @@ const Auction = () => {
                           <small className="rate fw-bold">20.5 ETH</small>
                         </div>
                         <a
-                          href="/item-detail-one"
+                          href="/item-detail-two"
                           onClick={e => {
                             e.preventDefault()
-                            navigate('/item-detail-one')
+                            navigate('/item-detail-two')
                           }}
                           className="btn btn-icon btn-pills btn-primary"
                         >
@@ -325,9 +324,6 @@ const Auction = () => {
       {/* CTA End */}
       {/* footer */}
       <Footer />
-
-      {/* Style switcher  */}
-      <StyleSwitcher />
     </>
   )
 }

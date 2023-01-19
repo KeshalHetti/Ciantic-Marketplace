@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
-import StyleSwitcher from '../../components/StyleSwitcher'
 import { bg02 } from '../../components/imageImport'
 import BackToTop from '../../components/BackToTop'
 
@@ -636,8 +635,6 @@ const Faqs = () => {
       {/* footer */}
       <Footer />
       <BackToTop />
-      {/* Style switcher  */}
-      <StyleSwitcher />
     </>
   )
 }

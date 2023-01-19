@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import { FiArrowRight } from 'react-icons/fi'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
-import StyleSwitcher from '../../components/StyleSwitcher'
 import { bg02, bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9, bg10, bg11, bg12 } from '../../components/imageImport'
 
 const BlogSidebar = () => {
@@ -458,9 +457,6 @@ const BlogSidebar = () => {
 
       {/* footer */}
       <Footer />
-
-      {/* Style switcher  */}
-      <StyleSwitcher />
     </>
   )
 }

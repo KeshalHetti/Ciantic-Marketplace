@@ -2,7 +2,6 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'
 import { whiteLogo } from '../../components/imageImport'
-import StyleSwitcher from '../../components/StyleSwitcher'
 
 function ResetPassword() {
   const navigate = useNavigate()
@@ -121,9 +120,6 @@ function ResetPassword() {
       </section>
       {/* end section*/}
       {/*  Hero End */}
-
-      {/* Style switcher  */}
-      <StyleSwitcher />
     </>
   )
 }

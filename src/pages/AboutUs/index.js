@@ -11,7 +11,6 @@ import {
   about,
 } from "../../components/imageImport";
 
-import StyleSwitcher from '../../components/StyleSwitcher'
 
 const AboutUs = () => {
   const navigate = useNavigate()
@@ -426,9 +425,6 @@ const AboutUs = () => {
 
       {/* Footer */}
       <Footer />
-
-      {/* Style switcher  */}
-      <StyleSwitcher />
     </>
   )
 }

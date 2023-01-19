@@ -2,7 +2,6 @@ import React from 'react'
 import { FiArrowLeft } from 'react-icons/fi'
 import Loading from '../../components/Loading'
 import { bg03, lightLogo } from '../../components/imageImport'
-import StyleSwitcher from '../../components/StyleSwitcher'
 
 const ComingSoon = () => {
   return (
@@ -91,9 +90,6 @@ const ComingSoon = () => {
         {/*end container*/}
       </section>
       {/*end section*/}
-
-      {/* Style switcher  */}
-      <StyleSwitcher />
       {/* End */}
     </>
   )

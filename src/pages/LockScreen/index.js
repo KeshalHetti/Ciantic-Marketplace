@@ -2,7 +2,6 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'
 import { whiteLogo, client01 } from '../../components/imageImport'
-import StyleSwitcher from '../../components/StyleSwitcher'
 
 const LockScreen = () => {
   const navigate = useNavigate()
@@ -137,9 +136,6 @@ const LockScreen = () => {
       </section>
       {/*end section*/}
       {/* Hero End */}
-
-      {/* Style switcher  */}
-      <StyleSwitcher />
     </>
   )
 }

@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'
 import { whiteLogo } from '../../components/imageImport'
-import StyleSwitcher from '../../components/StyleSwitcher'
 
 const Login = () => {
   const navigate = useNavigate()
@@ -161,9 +160,6 @@ const Login = () => {
       </section>
       {/* end section */}
       {/*  Hero End  */}
-
-      {/* Style switcher  */}
-      <StyleSwitcher />
     </>
   )
 }

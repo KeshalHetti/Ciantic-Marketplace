@@ -4,7 +4,6 @@ import { FiCamera } from 'react-icons/fi'
 import Countdown from 'react-countdown'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
-import StyleSwitcher from '../../components/StyleSwitcher'
 import {
   client01, client02, client03, client04, client05, client06, client08,
   client10, client12, client13,
@@ -878,9 +877,6 @@ const CreateProfile = () => {
       {/* End Home */}
       {/* footer */}
       <Footer />
-
-      {/* Style switcher  */}
-      <StyleSwitcher />
     </>
   )
 }

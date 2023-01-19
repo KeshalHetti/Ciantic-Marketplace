@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FiArrowLeft } from 'react-icons/fi'
 import Countdown from 'react-countdown'
-import StyleSwitcher from '../../components/StyleSwitcher'
 import { lightLogo, bg04 } from '../../components/imageImport'
 
 const Maintenance = () => {
@@ -86,9 +85,6 @@ const Maintenance = () => {
         {/*end container*/}
       </section>
       {/*end section*/}
-
-      {/* Style switcher  */}
-      <StyleSwitcher />
 
       {/* End */}
     </>

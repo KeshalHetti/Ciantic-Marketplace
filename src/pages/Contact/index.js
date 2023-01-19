@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import { bg01, office } from '../../components/imageImport'
-import StyleSwitcher from '../../components/StyleSwitcher'
 
 const Contact = () => {
   const navigate = useNavigate()
@@ -343,9 +342,6 @@ const Contact = () => {
 
       {/* footer */}
       <Footer />
-
-      {/* Style switcher  */}
-      <StyleSwitcher />
     </>
   )
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import { FiArrowLeft } from 'react-icons/fi'
-import StyleSwitcher from '../../components/StyleSwitcher'
 import { logoDark, ErrorImage } from '../../components/imageImport'
 
 const Error = () => {
@@ -69,9 +68,6 @@ const Error = () => {
       </section>
       {/* end section */}
       {/* End  */}
-
-      {/* Style switcher  */}
-      <StyleSwitcher />
     </>
   )
 }
