@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import Countdown from 'react-countdown'
-import { client01, client02, client03, client08, client09, client10, item1, item2, gif1, gif2, itemDetail1 } from '../../components/imageImport'
+import { client01, client02, client03, client08, client09, client10, item1, item2, gif1, gif2, itemDetail1, item7, } from '../../components/imageImport'
 
 const ItemDetailOne = () => {
   const navigate = useNavigate()
@@ -77,7 +77,7 @@ const ItemDetailOne = () => {
             <div className="col-md-6">
               <div className="sticky-bar">
                 <img
-                  src={itemDetail1}
+                  src={item7}
                   className="img-fluid rounded-md shadow"
                   alt=""
                 />
@@ -88,30 +88,14 @@ const ItemDetailOne = () => {
               <div className="ms-lg-5">
                 <div className="title-heading">
                   <h4 className="h3 fw-bold mb-0">
-                    Wolf with Skull{' '}
-                    <span className="text-gradient-primary">Orange</span> <br />{' '}
-                    <span className="text-gradient-primary">Illustration</span>{' '}
-                    T-shirt Tattoo
+                    Apple Iphone 14 Pro Max
                   </h4>
                 </div>
 
                 <div className="row">
                   <div className="col-md-6 mt-4 pt-2">
-                    <h6>Current Bid</h6>
-                    <h4 className="mb-0">4.85 ETH</h4>
-                    <small className="mb-0 text-muted">$450.48USD</small>
-                  </div>
-
-                  <div className="col-md-6 mt-4 pt-2">
-                    <h6>Auction Ending In</h6>
-                    <Countdown
-                      date={'Aug 20, 2022 1:6:3'}
-                      renderer={({ days, hours, minutes, seconds }) => (
-                        <span>
-                          {days}:{hours}:{minutes}:{seconds}
-                        </span>
-                      )}
-                    />
+                    <h5>Price</h5>
+                    <h4 className="mb-0">LKR 600,000</h4>
                   </div>
 
                   <div className="col-12 mt-4 pt-2">
@@ -404,12 +388,7 @@ const ItemDetailOne = () => {
           <div className="row justify-content-center">
             <div className="col">
               <div className="section-title text-center mb-4 pb-2">
-                <h4 className="title mb-4">Related Auction Items</h4>
-                <p className="text-muted para-desc mb-0 mx-auto">
-                  We are a huge marketplace dedicated to connecting great
-                  artists of all Superex with their fans and unique token
-                  collectors!
-                </p>
+                <h4 className="title mb-4">Related Items</h4>
               </div>
             </div>
             {/*end col*/}
