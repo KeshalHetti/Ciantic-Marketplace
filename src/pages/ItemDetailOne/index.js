@@ -3,7 +3,11 @@ import { useNavigate } from 'react-router-dom'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import Countdown from 'react-countdown'
-import { client01, client02, client03, client08, client09, client10, item1, item2, gif1, gif2, itemDetail1, item7, } from '../../components/imageImport'
+import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRounded';
+import ShoppingCartCheckoutRoundedIcon from '@mui/icons-material/ShoppingCartCheckoutRounded';
+import { client01, client02, client03, client08, client09, client10, item1, item2, gif1, gif2, itemDetail1, 
+item7, item7detail1, item7detail2, item7detail3, item7detail4, item7detail5, item7detail6, item7detail7,item7detail8,
+item7detail9,} from '../../components/imageImport'
 
 const ItemDetailOne = () => {
   const navigate = useNavigate()
@@ -105,7 +109,9 @@ const ItemDetailOne = () => {
                       data-bs-toggle="modal"
                       data-bs-target="#NftBid"
                     >
-                      <i className="mdi mdi-gavel fs-5 me-2"></i> Place a Bid
+                    <i className="fs-5 me-2">  
+                      {<AddShoppingCartRoundedIcon />} 
+                    </i> Add to Cart
                     </a>
                     <a
                       href="#"
@@ -113,7 +119,9 @@ const ItemDetailOne = () => {
                       data-bs-toggle="modal"
                       data-bs-target="#NftBuynow"
                     >
-                      <i className="mdi mdi-cart fs-5 me-2"></i> Buy Now
+                      <i className="fs-5 me-2">
+                      <ShoppingCartCheckoutRoundedIcon />
+                      </i> Buy Now
                     </a>
                   </div>
                 </div>
@@ -136,7 +144,7 @@ const ItemDetailOne = () => {
                           aria-controls="detailItem"
                           aria-selected="true"
                         >
-                          Details
+                          Description
                         </button>
                       </li>
 
@@ -151,7 +159,7 @@ const ItemDetailOne = () => {
                           aria-controls="bids"
                           aria-selected="false"
                         >
-                          Bids
+                          Specifications
                         </button>
                       </li>
 
@@ -166,7 +174,7 @@ const ItemDetailOne = () => {
                           aria-controls="activity"
                           aria-selected="false"
                         >
-                          Activity
+                          Reviews
                         </button>
                       </li>
                     </ul>
@@ -178,20 +186,14 @@ const ItemDetailOne = () => {
                         role="tabpanel"
                         aria-labelledby="detail-tab"
                       >
-                        <p className="text-muted">
-                          Hey guys! New exploration about NFT Marketplace Web
-                          Design, this time I'm inspired by one of my favorite
-                          NFT website called Superex (with crypto payment)! What
-                          do you think?
-                        </p>
-                        <p className="text-muted">
-                          What does it mean? Biomechanics is the study of the
-                          structure, function and motion of the mechanical
-                          aspects of biological systems, at any level from whole
-                          organisms to organs, cells and cell organelles, using
-                          the methods of mechanics. Biomechanics is a branch of
-                          biophysics.
-                        </p>
+                        <h6 className="text-muted">
+                        Brand: Apple{' '} <br/>
+                        Model Name: 	iPhone {' '} <br/>
+                        Network Service Provider: 	Unlocked for All Carriers {' '} <br/>
+                        Operating System: 	iOS {' '} <br/>
+                        Cellular Technology: 	5G {' '} <br/>
+                        </h6>
+                        {' '} <br/>
                         <h6>Owner</h6>
 
                         <div className="creators creator-primary d-flex align-items-center">
@@ -221,6 +223,16 @@ const ItemDetailOne = () => {
                             </h6>
                           </div>
                         </div>
+                        <br/>
+                        <img src={item7detail1} className="img-fluid rounded-md shadow" alt=""/>
+                        <img src={item7detail2} className="img-fluid rounded-md shadow" alt=""/>
+                        <img src={item7detail3} className="img-fluid rounded-md shadow" alt=""/>
+                        <img src={item7detail4} className="img-fluid rounded-md shadow" alt=""/>
+                        <img src={item7detail5} className="img-fluid rounded-md shadow" alt=""/>
+                        <img src={item7detail6} className="img-fluid rounded-md shadow" alt=""/>
+                        <img src={item7detail7} className="img-fluid rounded-md shadow" alt=""/>
+                        <img src={item7detail8} className="img-fluid rounded-md shadow" alt=""/>
+                        <img src={item7detail9} className="img-fluid rounded-md shadow" alt=""/>
                       </div>
 
                       <div
@@ -229,86 +241,18 @@ const ItemDetailOne = () => {
                         role="tabpanel"
                         aria-labelledby="bids-tab"
                       >
-                        <div className="creators creator-primary d-flex align-items-center">
-                          <div className="position-relative">
-                            <img
-                              src={client01}
-                              className="avatar avatar-md-sm shadow-md rounded-pill"
-                              alt=""
-                            />
-                          </div>
-
-                          <div className="ms-3">
-                            <h6 className="mb-0">
-                              2 WETH <span className="text-muted">by</span>{' '}
-                              <a
-                                href="/creator-profile"
-                                onClick={e => {
-                                  e.preventDefault()
-                                  navigate('/creator-profile')
-                                }}
-                                className="text-dark name"
-                              >
-                                0xe849fa28a...ea14
-                              </a>
-                            </h6>
-                            <small className="text-muted">6 hours ago</small>
-                          </div>
-                        </div>
-
-                        <div className="creators creator-primary d-flex align-items-center mt-4">
-                          <div className="position-relative">
-                            <img
-                              src={client08}
-                              className="avatar avatar-md-sm shadow-md rounded-pill"
-                              alt=""
-                            />
-                          </div>
-
-                          <div className="ms-3">
-                            <h6 className="mb-0">
-                              0.001 WETH <span className="text-muted">by</span>{' '}
-                              <a
-                                href="/creator-profile"
-                                onClick={e => {
-                                  e.preventDefault()
-                                  navigate('/creator-profile')
-                                }}
-                                className="text-dark name"
-                              >
-                                VOTwear
-                              </a>
-                            </h6>
-                            <small className="text-muted">6 hours ago</small>
-                          </div>
-                        </div>
-
-                        <div className="creators creator-primary d-flex align-items-center mt-4">
-                          <div className="position-relative">
-                            <img
-                              src={client10}
-                              className="avatar avatar-md-sm shadow-md rounded-pill"
-                              alt=""
-                            />
-                          </div>
-
-                          <div className="ms-3">
-                            <h6 className="mb-0">
-                              1.225 WETH <span className="text-muted">by</span>{' '}
-                              <a
-                                href="/creator-profile"
-                                onClick={e => {
-                                  e.preventDefault()
-                                  navigate('/creator-profile')
-                                }}
-                                className="text-dark name"
-                              >
-                                PandaOne
-                              </a>
-                            </h6>
-                            <small className="text-muted">6 hours ago</small>
-                          </div>
-                        </div>
+                        <h6>
+                          <ul>
+                            <li>6.7 inches LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision</li>
+                            <li>Dynamic Island, a magical new way to interact with iPhone</li>
+                            <li>48MP Main camera for up to 4x greater resolution</li>
+                            <li>Cinematic mode now in 4K Dolby Vision up to 30 fps</li>
+                            <li>Action mode for smooth, steady, handheld videos</li>
+                            <li>6GB RAM Apple A16 Bionic</li>
+                            <li>4323mAh Li-Ion</li>
+                            <li>128GB/256GB/1TB Storage, no card slot</li>
+                          </ul>
+                        </h6>
                       </div>
 
                       <div
