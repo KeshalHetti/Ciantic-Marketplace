@@ -9,7 +9,7 @@ import Navbar from '../../components/Navbar'
 import {
   client01, client02, client03, client04, client05, client06, client07, client08,
   client09, client10, client11, client12, client13,
-  item1, item2, item3, item4, item5, item6,
+  item1, item2, item3, item4, item5, item6, item7,
   gif1, gif2, gif3, gif4, gif5, gif6,
   bgImage, bg1, bg2, bg3, bg02, united, community,
   work1, work2, work3, work4, work5, work6, work7, work8, work9, work10, work11, work12, cianticMarketLogoLarge,
@@ -54,101 +54,102 @@ const DarkVersionOne = () => {
     }
   }, [])
 
- /*  const toggleSwitcher = () => {
-    var i = document.getElementById('style-switcher')
-    if (i) {
-      if (i.style.left === '-189px') {
-        i.style.left = '0px'
-      } else {
-        i.style.left = '-189px'
-      }
-    }
-  }
- */
   const AuctionData = [
     {
-      image: gif1,
-      title: 'Iphone 14',
-      type: 'GIFs',
-      filter: ['all', 'games'],
-      id: 'May 29, 2022 6:0:0'
-    },
-    {
-      image: item1,
-      title: 'CyberPrimal 042 LAN',
-      id: '',
+      image: item3,
+      title: 'Samsung Galaxy S22 Ultra',
+      price: 400000,
+      quantity: '15 In Stock',
       type: 'Arts',
       filter: ['all', 'art'],
     },
     {
-      image: gif2,
-      title: 'Crypto Egg Stamp #5',
-      id: '',
-      type: 'Games',
-      filter: ['all', 'music', 'meme'],
-    },
-    {
-      image: item2,
-      title: 'Colorful Abstract Painting',
-      id: 'June 03, 2022 5:3:1',
-      type: '',
-      filter: ['all', 'video'],
-    },
-    {
-      image: item3,
-      title: 'Liquid Forest Princess',
-      id: '',
-      type: '',
-      filter: ['all', 'video', 'meme'],
-    },
-    {
-      image: gif3,
-      title: 'Spider Eyes Modern Art',
-      id: 'June 10, 2022 1:0:1',
-      type: 'GIFs',
-      filter: ['all', 'games'],
-    },
-    {
-      image: item4,
-      title: 'Synthwave Painting',
-      id: '',
-      type: '',
+      image: item7,
+      title: 'Iphone 14 Pro Max',
+      price: 600000,
+      quantity: '15 In Stock',
+      type: 'Arts',
       filter: ['all', 'art'],
     },
     {
-      image: gif4,
-      title: 'Contemporary Abstract',
-      id: '',
-      type: 'GIFs',
-      filter: ['all', 'music'],
+      image: item4,
+      title: 'Sony a7 III ILCE7M3/B',
+      price: 800000,
+      quantity: '15 In Stock',
+      type: 'Arts',
+      filter: ['all', 'art'],
     },
     {
       image: item5,
-      title: 'Valkyrie Abstract Art',
-      id: '',
-      type: '',
-      filter: ['all', 'video', 'meme'],
-    },
-    {
-      image: gif5,
-      title: 'The girl with the firefly',
-      id: '',
-      type: '',
+      title: 'Samsung 85-Inch QN900B Neo QLED 8K',
+      price: 1636920,
+      quantity: '15 In Stock',
+      type: 'Arts',
       filter: ['all', 'art'],
     },
     {
       image: item6,
-      title: 'Dodo hide the seek',
-      id: '',
-      type: '',
-      filter: ['all', 'games'],
+      title: 'Google Nest Cam Outdoor or Indoor',
+      price: 300000,
+      quantity: '15 In Stock',
+      type: 'Arts',
+      filter: ['all', 'art'],
     },
     {
-      image: gif6,
-      title: 'Pinky Ocean',
-      id: 'June 10, 2022 1:0:1',
-      type: '',
-      filter: ['all', 'music'],
+      image: item1,
+      title: 'Beautiful Handmade Hand Carving Wooden Elephant For Gift Item',
+      price: 90000,
+      quantity: '15 In Stock',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item1,
+      title: 'Nike Air Jordan Lift Off Chicago Bulls White Gym Red Black AR4430-106 Mens',
+      price: 90000,
+      quantity: '15 In Stock',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item1,
+      title: 'Hanes Men Fleece Sweatpants w/ pockets ComfortSoft EcoSmart Low-pill High Stitch',
+      price: 90000,
+      quantity: '15 In Stock',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item1,
+      title: 'CyberPrimal 042 LAN',
+      price: 90000,
+      quantity: '15 In Stock',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item1,
+      title: 'CyberPrimal 042 LAN',
+      price: 90000,
+      quantity: '15 In Stock',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item1,
+      title: 'CyberPrimal 042 LAN',
+      price: 90000,
+      quantity: '15 In Stock',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item1,
+      title: 'CyberPrimal 042 LAN',
+      price: 90000,
+      quantity: '15 In Stock',
+      type: 'Arts',
+      filter: ['all', 'art'],
     },
   ]
 
@@ -376,7 +377,7 @@ const DarkVersionOne = () => {
           </div>
           {/*end row*/}
 
-          <div className="row justify-content-center mt-4 mb-5">
+          <div className="row justify-content-center mb-4 pb-2">
             <div className="col filters-group-wrap">
               <div className="filters-group">
                 <ul className="container-filter mb-0 categories-filter text-center list-unstyled">
@@ -394,7 +395,7 @@ const DarkVersionOne = () => {
                     // data-group="games"
                     onClick={() => setFilter('games')}
                   >
-                    <i className="uil uil-volleyball"></i> Games
+                  Electronics
                   </li>
                   <li
                     className={`list-inline-item categories position-relative text-dark ${type === 'art' ? 'active' : ''
@@ -402,7 +403,7 @@ const DarkVersionOne = () => {
                     // data-group="art"
                     onClick={() => setFilter('art')}
                   >
-                    <i className="uil uil-chart-pie-alt"></i> Art
+                  Software
                   </li>
                   <li
                     className={`list-inline-item categories position-relative text-dark ${type === 'music' ? 'active' : ''
@@ -410,7 +411,7 @@ const DarkVersionOne = () => {
                     // data-group="music"
                     onClick={() => setFilter('music')}
                   >
-                    <i className="uil uil-music"></i> Music
+                  Household
                   </li>
                   <li
                     className={`list-inline-item categories position-relative text-dark ${type === 'video' ? 'active' : ''
@@ -418,7 +419,7 @@ const DarkVersionOne = () => {
                     // data-group="video"
                     onClick={() => setFilter('video')}
                   >
-                    <i className="uil uil-camera-plus"></i> Video
+                  Fashion
                   </li>
                   <li
                     className={`list-inline-item categories position-relative text-dark ${type === 'meme' ? 'active' : ''
@@ -426,7 +427,15 @@ const DarkVersionOne = () => {
                     // data-group="memes"
                     onClick={() => setFilter('meme')}
                   >
-                    <i className="uil uil-rocket"></i> Memes
+                  Workshop Equipment
+                  </li>
+                  <li
+                    className={`list-inline-item categories position-relative text-dark ${type === 'meme' ? 'active' : ''
+                      }`}
+                    // data-group="memes"
+                    onClick={() => setFilter('')}
+                  >
+                  Health Care
                   </li>
                 </ul>
               </div>
@@ -436,138 +445,73 @@ const DarkVersionOne = () => {
           {/*end row*/}
 
           <div
-            className="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1 g-4"
+            className="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 g-4"
             id="grid"
-            style={{ justifyContent: "left" }}
           >
             {allData?.map(data => {
               return (
                 <div className="col picture-item" key={data?.title}>
-                  <div className="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
-                    <div className="d-flex justify-content-between">
-                      <div className="img-group">
-                        <a
-                          href="/creator-profile"
-                          onClick={e => {
-                            e.preventDefault()
-                            navigate('/creator-profile')
-                          }}
-                          className="user-avatar"
-                        >
-                          <img
-                            src={client08}
-                            alt="user"
-                            className="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle"
-                          />
-                        </a>
-                        <a
-                          href="/creator-profile"
-                          onClick={e => {
-                            e.preventDefault()
-                            navigate('/creator-profile')
-                          }}
-                          className="user-avatar ms-n3"
-                        >
-                          <img
-                            src={client05}
-                            alt="user"
-                            className="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle"
-                          />
-                        </a>
-                        <a
-                          href="/creator-profile"
-                          onClick={e => {
-                            e.preventDefault()
-                            navigate('/creator-profile')
-                          }}
-                          className="user-avatar ms-n3"
-                        >
-                          <img
-                            src={client06}
-                            alt="user"
-                            className="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle"
-                          />
-                        </a>
+                  <div className="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1">
+                    <div className="nft-image position-relative overflow-hidden">
+                      <img src={data?.image} className="img-fluid" alt="" />
+                      <div className="position-absolute top-0 end-0 m-2">
+                        <span className="like-icon shadow-sm">
+                          <a
+                            href=""
+                            onClick={e => e.preventDefault()}
+                            className="text-muted icon"
+                          >
+                            <i className="mdi mdi-18px mdi-heart mb-0"></i>
+                          </a>
+                        </span>
                       </div>
-
-                      <span className="like-icon shadow-sm">
-                        <a
-                          href=""
-                          onClick={e => e.preventDefault()}
-                          className="text-muted icon"
-                        >
-                          <i className="mdi mdi-18px mdi-heart mb-0"></i>
-                        </a>
-                      </span>
                     </div>
 
-                    <div className="nft-image rounded-md mt-3 position-relative overflow-hidden">
-                      <a
-                        href="/item-detail-one"
-                        onClick={e => {
-                          e.preventDefault()
-                          navigate('/item-detail-one')
-                        }}
-                      >
-                        <img src={data?.image} className="img-fluid" alt="" />
-                      </a>
-                      <div className="position-absolute top-0 start-0 m-2">
-                        <a
-                          href=""
-                          onClick={e => e.preventDefault()}
-                          className="badge badge-link bg-primary"
-                        >
-                          GIFs
-                        </a>
-                      </div>
-
-                      <div className="position-absolute top-0 end-0 m-2">
+                    <div className="card-body content position-relative">
+                      <div className="mt-2">
                         <a
                           href="/item-detail-one"
                           onClick={e => {
                             e.preventDefault()
                             navigate('/item-detail-one')
                           }}
-                          className="btn btn-pills btn-icon"
+                          className="title text-dark h6"
                         >
-                          <i className="uil uil-shopping-cart-alt"></i>
+                          {data?.title}
                         </a>
-                      </div>
-                      <div className={`${data?.id ? '' : 'hide-data'} position-absolute bottom-0 start-0 m-2 bg-gradient-primary text-white title-dark rounded-pill px-3`}>
-                        <i className="uil uil-clock"></i>{' '}
-                        <Countdown
-                          date={data?.id}
-                          renderer={({ days, hours, minutes, seconds }) => (
-                            <span>
-                             {days}:{hours}:{minutes}:{seconds}
-                            </span>
-                          )}
-                        />
-                      </div>
-                    </div>
 
-                    <div className="card-body content position-relative p-0 mt-3">
-                      <a
-                        href="/item-detail-one"
-                        onClick={e => {
-                          e.preventDefault()
-                          navigate('/item-detail-one')
-                        }}
-                        className="title text-dark h6"
-                      >
-                        {data?.title}
-                      </a>
-
-                      <div className="d-flex justify-content-between mt-2">
-                        <small className="rate fw-bold">20.5 ETH</small>
-                        <small className="text-dark fw-bold">1 out of 10</small>
+                        <div className="d-flex justify-content-between mt-2">
+                          <small className="rate fw-bold">LKR {data?.price}</small>
+                          <small className="text-dark fw-bold">
+                          {data?.quantity}
+                          </small>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               )
             })}
+            {/*end col*/}
           </div>
+          <div className="row justify-content-center mt-4">
+            <div className="col">
+              <div className="text-center">
+                <a
+                  href="/aboutus"
+                  onClick={e => {
+                    e.preventDefault()
+                    navigate('/explore-one')
+                  }}
+                  className="btn btn-primary rounded-md"
+                >
+                  <i className="uil uil-process mdi-spin me-1"></i> Visit the Marketplace
+                </a>
+              </div>
+            </div>
+            {/*end col*/}
+          </div>
+          {/*end row*/}
         </div>
         {/*end container*/}
         {/*end section*/}

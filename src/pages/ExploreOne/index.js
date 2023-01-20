@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
-import StyleSwitcher from '../../components/StyleSwitcher'
+import SearchBar from '../../components/SearchBar'
 import {
-  bgImage, item1, item2, item3, item4, item5, item6,
+  bgImage, item1, item2, item3, item4, item5, item6, item7, item12,
   gif1, gif2, gif3, gif4, gif5, gif6,
   cta, client05, client06, client08
 } from '../../components/imageImport'
@@ -13,42 +13,66 @@ const ExploreOne = () => {
   const navigate = useNavigate()
   const AuctionData = [
     {
-      image: item1,
-      title: 'CyberPrimal 042 LAN',
-      price: 10000,
-      time: '',
+      image: item3,
+      title: 'Samsung Galaxy S22 Ultra',
+      price: 400000,
+      quantity: '15 In Stock',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item7,
+      title: 'Iphone 14 Pro Max',
+      price: 600000,
+      quantity: '15 In Stock',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item4,
+      title: 'Sony a7 III ILCE7M3/B',
+      price: 800000,
+      quantity: '15 In Stock',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item5,
+      title: 'Samsung 85-Inch QN900B Neo QLED 8K',
+      price: 1636920,
+      quantity: '15 In Stock',
+      type: 'Arts',
+      filter: ['all', 'art'],
+    },
+    {
+      image: item6,
+      title: 'Google Nest Cam Outdoor or Indoor',
+      price: 300000,
+      quantity: '15 In Stock',
       type: 'Arts',
       filter: ['all', 'art'],
     },
     {
       image: item1,
-      title: 'CyberPrimal 042 LAN',
-      price: 30000,
-      time: '',
+      title: 'Beautiful Handmade Hand Carving Wooden Elephant For Gift Item',
+      price: 90000,
+      quantity: '15 In Stock',
       type: 'Arts',
       filter: ['all', 'art'],
     },
     {
       image: item1,
-      title: 'CyberPrimal 042 LAN',
-      price: 50000,
-      time: '',
+      title: 'Nike Air Jordan Lift Off Chicago Bulls White Gym Red Black AR4430-106 Mens',
+      price: 90000,
+      quantity: '15 In Stock',
       type: 'Arts',
       filter: ['all', 'art'],
     },
     {
       image: item1,
-      title: 'CyberPrimal 042 LAN',
-      price: 60000,
-      time: '',
-      type: 'Arts',
-      filter: ['all', 'art'],
-    },
-    {
-      image: item1,
-      title: 'CyberPrimal 042 LAN',
-      price: 20000,
-      time: '',
+      title: 'Hanes Men Fleece Sweatpants w/ pockets ComfortSoft EcoSmart Low-pill High Stitch',
+      price: 90000,
+      quantity: '15 In Stock',
       type: 'Arts',
       filter: ['all', 'art'],
     },
@@ -56,7 +80,7 @@ const ExploreOne = () => {
       image: item1,
       title: 'CyberPrimal 042 LAN',
       price: 90000,
-      time: '',
+      quantity: '15 In Stock',
       type: 'Arts',
       filter: ['all', 'art'],
     },
@@ -64,7 +88,7 @@ const ExploreOne = () => {
       image: item1,
       title: 'CyberPrimal 042 LAN',
       price: 90000,
-      time: '',
+      quantity: '15 In Stock',
       type: 'Arts',
       filter: ['all', 'art'],
     },
@@ -72,7 +96,7 @@ const ExploreOne = () => {
       image: item1,
       title: 'CyberPrimal 042 LAN',
       price: 90000,
-      time: '',
+      quantity: '15 In Stock',
       type: 'Arts',
       filter: ['all', 'art'],
     },
@@ -80,31 +104,7 @@ const ExploreOne = () => {
       image: item1,
       title: 'CyberPrimal 042 LAN',
       price: 90000,
-      time: '',
-      type: 'Arts',
-      filter: ['all', 'art'],
-    },
-    {
-      image: item1,
-      title: 'CyberPrimal 042 LAN',
-      price: 90000,
-      time: '',
-      type: 'Arts',
-      filter: ['all', 'art'],
-    },
-    {
-      image: item1,
-      title: 'CyberPrimal 042 LAN',
-      price: 90000,
-      time: '',
-      type: 'Arts',
-      filter: ['all', 'art'],
-    },
-    {
-      image: item1,
-      title: 'CyberPrimal 042 LAN',
-      price: 90000,
-      time: '',
+      quantity: '15 In Stock',
       type: 'Arts',
       filter: ['all', 'art'],
     },
@@ -191,6 +191,9 @@ const ExploreOne = () => {
       <section className="section">
         <div className="container">
           <div className="row justify-content-center mb-4 pb-2">
+          <div>
+            <SearchBar />
+          </div>
             <div className="col filters-group-wrap">
               <div className="filters-group">
                 <ul className="container-filter mb-0 categories-filter text-center list-unstyled">
@@ -208,7 +211,7 @@ const ExploreOne = () => {
                     // data-group="games"
                     onClick={() => setFilter('games')}
                   >
-                    <i className="uil uil-volleyball"></i> Electronics
+                  Electronics
                   </li>
                   <li
                     className={`list-inline-item categories position-relative text-dark ${type === 'art' ? 'active' : ''
@@ -216,7 +219,7 @@ const ExploreOne = () => {
                     // data-group="art"
                     onClick={() => setFilter('art')}
                   >
-                    <i className="uil uil-chart-pie-alt"></i> Software
+                  Software
                   </li>
                   <li
                     className={`list-inline-item categories position-relative text-dark ${type === 'music' ? 'active' : ''
@@ -224,7 +227,7 @@ const ExploreOne = () => {
                     // data-group="music"
                     onClick={() => setFilter('music')}
                   >
-                    <i className="uil uil-music"></i> Household
+                  Household
                   </li>
                   <li
                     className={`list-inline-item categories position-relative text-dark ${type === 'video' ? 'active' : ''
@@ -232,7 +235,7 @@ const ExploreOne = () => {
                     // data-group="video"
                     onClick={() => setFilter('video')}
                   >
-                    <i className="uil uil-camera-plus"></i> Fashion
+                  Fashion
                   </li>
                   <li
                     className={`list-inline-item categories position-relative text-dark ${type === 'meme' ? 'active' : ''
@@ -240,7 +243,7 @@ const ExploreOne = () => {
                     // data-group="memes"
                     onClick={() => setFilter('meme')}
                   >
-                    <i className="uil uil-rocket"></i> Equipment
+                  Workshop Equipment
                   </li>
                   <li
                     className={`list-inline-item categories position-relative text-dark ${type === 'meme' ? 'active' : ''
@@ -248,7 +251,7 @@ const ExploreOne = () => {
                     // data-group="memes"
                     onClick={() => setFilter('')}
                   >
-                    <i className="uil uil-rocket"></i> Health Care
+                  Health Care
                   </li>
                 </ul>
               </div>
@@ -278,68 +281,9 @@ const ExploreOne = () => {
                           </a>
                         </span>
                       </div>
-
-                      <div className="bid-btn">
-                        <a
-                          href="/item-detail-one"
-                          onClick={e => {
-                            e.preventDefault()
-                            navigate('/item-detail-one')
-                          }}
-                          className="btn btn-pills"
-                        >
-                          <i className="mdi mdi-gavel fs-5 align-middle me-1"></i>{' '}
-                          Bid
-                        </a>
-                      </div>
                     </div>
 
                     <div className="card-body content position-relative">
-                      <div className="img-group">
-                        <a
-                          href="/creator-profile"
-                          onClick={e => {
-                            e.preventDefault()
-                            navigate('/creator-profile')
-                          }}
-                          className="user-avatar"
-                        >
-                          <img
-                            src={client08}
-                            alt="user"
-                            className="avatar avatar-sm-sm img-thumbnail border-0 shadow-md rounded-circle"
-                          />
-                        </a>
-                        <a
-                          href="/creator-profile"
-                          onClick={e => {
-                            e.preventDefault()
-                            navigate('/creator-profile')
-                          }}
-                          className="user-avatar ms-n3"
-                        >
-                          <img
-                            src={client05}
-                            alt="user"
-                            className="avatar avatar-sm-sm img-thumbnail border-0 shadow-md rounded-circle"
-                          />
-                        </a>
-                        <a
-                          href="/creator-profile"
-                          onClick={e => {
-                            e.preventDefault()
-                            navigate('/creator-profile')
-                          }}
-                          className="user-avatar ms-n3"
-                        >
-                          <img
-                            src={client06}
-                            alt="user"
-                            className="avatar avatar-sm-sm img-thumbnail border-0 shadow-md rounded-circle"
-                          />
-                        </a>
-                      </div>
-
                       <div className="mt-2">
                         <a
                           href="/item-detail-one"
@@ -353,9 +297,9 @@ const ExploreOne = () => {
                         </a>
 
                         <div className="d-flex justify-content-between mt-2">
-                          <small className="rate fw-bold">{data?.price}</small>
+                          <small className="rate fw-bold">LKR {data?.price}</small>
                           <small className="text-dark fw-bold">
-                            1 out of 10
+                          {data?.quantity}
                           </small>
                         </div>
                       </div>
@@ -434,9 +378,6 @@ const ExploreOne = () => {
       {/*end section*/}
       {/* footer */}
       <Footer />
-
-      {/* Style switcher  */}
-      <StyleSwitcher />
     </>
   )
 }
