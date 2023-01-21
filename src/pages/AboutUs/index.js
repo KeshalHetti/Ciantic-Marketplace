@@ -92,7 +92,7 @@ const AboutUs = () => {
             <div className="col-12">
               <div className="title-heading text-center">
                 <h5 className="heading fw-semibold sub-heading text-white title-dark">
-                  Meet Superex
+                  Meet Cianitc
                 </h5>
                 <p className="text-white-50 para-desc mx-auto mb-0">
                   NFT marketplace where anything is possible and all are welcome
@@ -117,7 +117,7 @@ const AboutUs = () => {
                       navigate('/index')
                     }}
                   >
-                    Superex
+                    Cianitc
                   </a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
@@ -262,7 +262,7 @@ const AboutUs = () => {
                 <h4 className="title mb-4">Our Team</h4>
                 <p className="text-muted para-desc mb-0 mx-auto">
                   We are a huge marketplace dedicated to connecting great
-                  artists of all Superex with their fans and unique token
+                  artists of all Cianitc with their fans and unique token
                   collectors!
                 </p>
               </div>
@@ -325,7 +325,7 @@ const AboutUs = () => {
                 <h4 className="title mb-4">Latest Blog or News</h4>
                 <p className="text-muted para-desc mb-0 mx-auto">
                   We are a huge marketplace dedicated to connecting great
-                  artists of all Superex with their fans and unique token
+                  artists of all Cianitc with their fans and unique token
                   collectors!
                 </p>
               </div>

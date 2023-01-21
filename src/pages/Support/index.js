@@ -44,7 +44,7 @@ const Support = () => {
                       navigate('/index')
                     }}
                   >
-                    Superex
+                    Cianitc
                   </a>
                 </li>
                 <li className="breadcrumb-item">

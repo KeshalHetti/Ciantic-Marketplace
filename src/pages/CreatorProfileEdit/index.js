@@ -8,7 +8,7 @@ import { FiCamera } from 'react-icons/fi'
 const CreatorProfileEdit = () => {
   const navigate = useNavigate()
   const [name, setName] = useState('streetboyyy')
-  const [url, setUrl] = useState('https://superex.exe/streetboyyy')
+  const [url, setUrl] = useState('https://Cianitc.exe/streetboyyy')
   const [twitter, _twitter] = useState('https://twitter.com/streetboyyy')
   const [website, setWebsite] = useState('https://streetboyyy.com/')
   const [email, setEmail] = useState('streetboyyy@example.com')
@@ -62,7 +62,7 @@ const CreatorProfileEdit = () => {
                       navigate('/index')
                     }}
                   >
-                    Superex
+                    Cianitc
                   </a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
@@ -130,7 +130,7 @@ const CreatorProfileEdit = () => {
                         <div className="form-icon">
                           <input
                             name="url"
-                            id="superex-url"
+                            id="Cianitc-url"
                             type="url"
                             className="form-control"
                             value={url}

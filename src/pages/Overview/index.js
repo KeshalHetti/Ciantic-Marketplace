@@ -65,7 +65,7 @@ const OverView = () => {
                       navigate('/index')
                     }}
                   >
-                    Superex
+                    Cianitc
                   </a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
@@ -103,7 +103,7 @@ const OverView = () => {
                 <h4 className="mb-4 title">Find the help you need</h4>
                 <p className="para-desc mx-auto text-muted">
                   We are a huge marketplace dedicated to connecting great
-                  artists of all Superex with their fans and unique token
+                  artists of all Cianitc with their fans and unique token
                   collectors!
                 </p>
               </div>
@@ -199,7 +199,7 @@ const OverView = () => {
                 <h4 className="mb-4">Get Started</h4>
                 <p className="para-desc mx-auto text-muted">
                   We are a huge marketplace dedicated to connecting great
-                  artists of all Superex with their fans and unique token
+                  artists of all Cianitc with their fans and unique token
                   collectors!
                 </p>
               </div>
@@ -250,7 +250,7 @@ const OverView = () => {
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      Do I need a designer to use Superex ?
+                      Do I need a designer to use Cianitc ?
                     </button>
                   </h2>
                   <div

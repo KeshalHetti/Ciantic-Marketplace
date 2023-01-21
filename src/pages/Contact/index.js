@@ -102,7 +102,7 @@ const Contact = () => {
                       navigate('/index')
                     }}
                   >
-                    Superex
+                    Cianitc
                   </a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
@@ -143,7 +143,7 @@ const Contact = () => {
                 <div className="content mt-4 px-4">
                   <h5 className="fw-bold">Phone</h5>
                   <p className="text-muted">
-                    Start working with Superex that can provide everything
+                    Start working with Cianitc that can provide everything
                   </p>
                   <a href="tel:+152534-468-854" className="text-primary">
                     +152 534-468-854
@@ -161,7 +161,7 @@ const Contact = () => {
                 <div className="content mt-4 px-4">
                   <h5 className="fw-bold">Email</h5>
                   <p className="text-muted">
-                    Start working with Superex that can provide everything
+                    Start working with Cianitc that can provide everything
                   </p>
                   <a href="mailto:contact@example.com" className="text-primary">
                     contact@example.com

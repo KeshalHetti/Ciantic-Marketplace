@@ -44,7 +44,7 @@ const ChangeLog = () => {
                       navigate('/index')
                     }}
                   >
-                    Superex
+                    Cianitc
                   </a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
@@ -100,7 +100,7 @@ const ChangeLog = () => {
 
                   <div>
                     <a
-                      href="https://1.envato.market/superex"
+                      href="https://1.envato.market/Cianitc"
                       target="_blank"
                       className="btn btn-primary"
                     >

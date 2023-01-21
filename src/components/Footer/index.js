@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="row">
               {/* <div className="col-xl-8 col-lg-7 col-md-6">
                 <h5 className="text-light fw-normal title-dark">
-                  Download the Superex app to explore any NFTs
+                  Download the Cianitc app to explore any NFTs
                 </h5>
 
                 <div className="mt-4">
@@ -29,7 +29,7 @@ const Footer = () => {
 
               {/* <div className="col-xl-4 col-lg-5 col-md-6 mt-4 mt-sm-0">
                 <h5 className="text-light fw-normal title-dark">
-                  Join Superex community
+                  Join Cianitc community
                 </h5>
 
                 <ul className="list-unstyled social-icon foot-social-icon mb-0 mt-4 text-lg-end">

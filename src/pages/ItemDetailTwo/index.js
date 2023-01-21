@@ -229,7 +229,7 @@ const ItemDetailTwo = () => {
                             <p className="text-muted">
                               Hey guys! New exploration about NFT Marketplace
                               Web Design, this time I'm inspired by one of my
-                              favorite NFT website called Superex (with crypto
+                              favorite NFT website called Cianitc (with crypto
                               payment)! What do you think?
                             </p>
                             <p className="text-muted">
@@ -452,7 +452,7 @@ const ItemDetailTwo = () => {
                 <h4 className="title mb-4">Related Auction Items</h4>
                 <p className="text-muted para-desc mb-0 mx-auto">
                   We are a huge marketplace dedicated to connecting great
-                  artists of all Superex with their fans and unique token
+                  artists of all Cianitc with their fans and unique token
                   collectors!
                 </p>
               </div>
@@ -839,7 +839,7 @@ const ItemDetailTwo = () => {
                 <a href="" className="text-reset">
                   <u>XYZ nft</u>
                 </a>{' '}
-                from Superex
+                from Cianitc
               </h6>
 
               <ul className="rounded-md shadow p-4 border list-unstyled mt-4">

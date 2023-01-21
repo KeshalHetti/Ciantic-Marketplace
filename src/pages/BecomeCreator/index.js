@@ -5,7 +5,7 @@ import { creator } from '../../components/imageImport'
 
 const BecomeCreator = () => {
   const [name, setName] = useState('streetboyyy')
-  const [url, setUrl] = useState('https://superex.exe/streetboyyy')
+  const [url, setUrl] = useState('https://Cianitc.exe/streetboyyy')
   const [twitter, _twitter] = useState('https://twitter.com/streetboyyy')
   const handleChange = () => {
     const fileUploader = document.querySelector('#input-file')
@@ -43,14 +43,14 @@ const BecomeCreator = () => {
 
             <div className="col-lg-8 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
               <div className="title-heading">
-                <h6>Join with Superex!</h6>
+                <h6>Join with Cianitc!</h6>
                 <h5 className="heading fw-bold title-dark mb-4">
                   Start Your <br />
                   <span className="text-gradient-primary">Journey</span>
                 </h5>
                 <p className="text-muted mb-0 para-desc">
                   We are a huge marketplace dedicated to connecting great
-                  artists of all Superex with their fans and unique token
+                  artists of all Cianitc with their fans and unique token
                   collectors!
                 </p>
               </div>
@@ -87,7 +87,7 @@ const BecomeCreator = () => {
                 <h4 className="title mb-3">Fill the form</h4>
                 <p className="text-muted mb-0 para-desc mx-auto">
                   We are a huge marketplace dedicated to connecting great
-                  artists of all Superex with their fans and unique token
+                  artists of all Cianitc with their fans and unique token
                   collectors!
                 </p>
               </div>
@@ -146,7 +146,7 @@ const BecomeCreator = () => {
                             <div className="form-icon">
                               <input
                                 name="url"
-                                id="superex-url"
+                                id="Cianitc-url"
                                 type="url"
                                 className="form-control"
                                 value={url}

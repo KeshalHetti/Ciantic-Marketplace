@@ -21,11 +21,11 @@ const BlogDetail = () => {
               <div className="title-heading">
                 <h4 className="heading sub-heading fw-bold mb-3">
                   Here's a quick guide about how to make money selling your
-                  artworks with Superex!
+                  artworks with Cianitc!
                 </h4>
                 <p className="text-muted fs-5 mb-0">
                   The NFT space has made unprecedented progress since we first
-                  launched Superex in late 2021, as it hit several major
+                  launched Cianitc in late 2021, as it hit several major
                   milestones in the past…
                 </p>
 
@@ -38,7 +38,7 @@ const BlogDetail = () => {
                       onClick={e => e.preventDefault()}
                       className="h6 text-dark d-block mb-0"
                     >
-                      Superex NFT
+                      Cianitc NFT
                     </a>
                     <small className="text-muted mb-0">
                       20th January 2022, 8 min read

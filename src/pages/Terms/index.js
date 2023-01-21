@@ -45,7 +45,7 @@ const Terms = () => {
                       navigate('/index')
                     }}
                   >
-                    Superex
+                    Cianitc
                   </a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
@@ -215,7 +215,7 @@ const Terms = () => {
                           aria-expanded="false"
                           aria-controls="collapseTwo"
                         >
-                          Do I need a designer to use Superex ?
+                          Do I need a designer to use Cianitc ?
                         </button>
                       </h2>
                       <div

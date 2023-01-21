@@ -285,17 +285,6 @@ const ExploreOne = () => {
 
                     <div className="card-body content position-relative">
                       <div className="mt-2">
-                        <a
-                          href="/item-detail-one"
-                          onClick={e => {
-                            e.preventDefault()
-                            navigate('/item-detail-one')
-                          }}
-                          className="title text-dark h6"
-                        >
-                          {data?.title}
-                        </a>
-
                         <div className="d-flex justify-content-between mt-2">
                           <small className="rate fw-bold">LKR {data?.price}</small>
                           <small className="text-dark fw-bold">

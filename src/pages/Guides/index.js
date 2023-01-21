@@ -47,7 +47,7 @@ const Guides = () => {
                       navigate('/index')
                     }}
                   >
-                    Superex
+                    Cianitc
                   </a>
                 </li>
                 <li className="breadcrumb-item">
@@ -225,7 +225,7 @@ const Guides = () => {
                     className="text-muted"
                   >
                     <i className="mdi mdi-arrow-right text-primary me-2"></i>
-                    Superex Plus
+                    Cianitc Plus
                   </a>
                 </li>
                 <li className="mt-2">
@@ -309,7 +309,7 @@ const Guides = () => {
                     className="text-muted"
                   >
                     <i className="mdi mdi-arrow-right text-primary me-2"></i>
-                    Superex safely
+                    Cianitc safely
                   </a>
                 </li>
                 <li className="mt-2">
@@ -319,7 +319,7 @@ const Guides = () => {
                     className="text-muted"
                   >
                     <i className="mdi mdi-arrow-right text-primary me-2"></i>
-                    Superex Experiences and Adventures
+                    Cianitc Experiences and Adventures
                   </a>
                 </li>
                 <li className="mt-2">

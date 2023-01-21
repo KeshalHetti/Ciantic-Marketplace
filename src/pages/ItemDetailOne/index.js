@@ -717,7 +717,7 @@ const ItemDetailOne = () => {
                 <a href="" className="text-reset">
                   <u>XYZ nft</u>
                 </a>{' '}
-                from Superex
+                from Cianitc
               </h6>
 
               <ul className="rounded-md shadow p-4 border list-unstyled mt-4">

@@ -51,7 +51,7 @@ const Error = () => {
                 <div className="text-center">
                   <small className="mb-0 text-muted">
                     © <script>document.write(new Date().getFullYear())</script>{' '}
-                    Superex. Design & Develop with{' '}
+                    Cianitc. Design & Develop with{' '}
                     <i className="mdi mdi-heart text-danger"></i> by{' '}
                     
                     .
