@@ -50,19 +50,6 @@ const SignUp = () => {
                         <div className="col-lg-12">
                           <div className="form-floating mb-2">
                             <input
-                              type="text"
-                              className="form-control"
-                              id="RegisterName"
-                              placeholder="Harry"
-                            />
-                            <label htmlFor="RegisterName">First Name</label>
-                          </div>
-                        </div>
-                        {/* end col */}
-
-                        <div className="col-lg-12">
-                          <div className="form-floating mb-2">
-                            <input
                               type="email"
                               className="form-control"
                               id="RegisterEmail"
