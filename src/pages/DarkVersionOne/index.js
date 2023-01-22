@@ -7,12 +7,9 @@ import { tns } from 'tiny-slider/src/tiny-slider';
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import {
-  client01, client02, client03, client04, client05, client06, client07, client08,
-  client09, client10, client11, client12, client13,
-  item1, item2, item3, item4, item5, item6, item7,
-  gif1, gif2, gif3, gif4, gif5, gif6,
-  bgImage, bg1, bg2, bg3, bg02, united, community,
-  work1, work2, work3, work4, work5, work6, work7, work8, work9, work10, work11, work12, cianticMarketLogoLarge,
+  client01, client02, client03, client04, client05, client06,
+  client09, client10, client11, client12, client13, bgImage,bg02, cianticMarketLogoLarge,
+  c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15,
 } from '../../components/imageImport'
 
 const DarkVersionOne = () => {
@@ -54,108 +51,68 @@ const DarkVersionOne = () => {
     }
   }, [])
 
-  const AuctionData = [
-    {
-      image: item3,
-      title: 'Samsung Galaxy S22 Ultra',
-      price: 400000,
-      quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
-    },
-    {
-      image: item7,
-      title: 'Iphone 14 Pro Max',
-      price: 600000,
-      quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
-    },
-    {
-      image: item4,
-      title: 'Sony a7 III ILCE7M3/B',
-      price: 800000,
-      quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
-    },
-    {
-      image: item5,
-      title: 'Samsung 85-Inch QN900B Neo QLED 8K',
-      price: 1636920,
-      quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
-    },
-    {
-      image: item6,
-      title: 'Google Nest Cam Outdoor or Indoor',
-      price: 300000,
-      quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
-    },
-    {
-      image: item1,
-      title: 'Beautiful Handmade Hand Carving Wooden Elephant For Gift Item',
-      price: 90000,
-      quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
-    },
-    {
-      image: item1,
-      title: 'Nike Air Jordan Lift Off Chicago Bulls White Gym Red Black AR4430-106 Mens',
-      price: 90000,
-      quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
-    },
-    {
-      image: item1,
-      title: 'Hanes Men Fleece Sweatpants w/ pockets ComfortSoft EcoSmart Low-pill High Stitch',
-      price: 90000,
-      quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
-    },
-    {
-      image: item1,
-      title: 'CyberPrimal 042 LAN',
-      price: 90000,
-      quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
-    },
-    {
-      image: item1,
-      title: 'CyberPrimal 042 LAN',
-      price: 90000,
-      quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
-    },
-    {
-      image: item1,
-      title: 'CyberPrimal 042 LAN',
-      price: 90000,
-      quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
-    },
-    {
-      image: item1,
-      title: 'CyberPrimal 042 LAN',
-      price: 90000,
-      quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
-    },
-  ]
+  const collectionData = [
+      {
+        title: 'All',
+        img1: c3,
+        img2: c1,
+        img3: c4,
+        img4: c10,
+        client: client01,
+      },
+      
+      {
+        title: 'Electronics',
+        img1: c4,
+        img2: c1,
+        img3: c10,
+        img4: c3,
+        client: client02,
+      },
+      {
+        title: 'Software',
+        img1: c8,
+        img2: c9,
+        img3: c11,
+        img4: c12,
+        client: client12,
+      },
+      {
+        title: 'Household',
+        img1: c2,
+        img2: c5,
+        img3: c6,
+        img4: c7,
+        client: client10,
+      },
+      {
+        title: 'Fashion',
+        img1: c5,
+        img2: c6,
+        img3: c2,
+        img4: c7,
+        client: client09,
+      },
+      {
+        title: 'Workshop Equipment',
+        img1: c11,
+        img2: c9,
+        img3: c8,
+        img4: c12,
+        client: client11,
+      },
+      {
+        title: 'Health Care',
+        img1: c12,
+        img2: c1,
+        img3: c4,
+        img4: c10,
+        client: client03,
+      },
+    ]
 
-
-  const [allData, setAllData] = useState(AuctionData)
-  const [type, setType] = useState('all')
+  /* const [allData, setAllData] = useState(AuctionData)
+  const [type, setType] = useState('all') */
   const location = useLocation()
   const getClosest = (elem, selector) => {
 
@@ -292,12 +249,12 @@ const DarkVersionOne = () => {
   }, [location?.pathname])
 
 
-
+/* 
   const setFilter = type => {
     setType(type)
     const newOne = AuctionData?.filter(data => data?.filter?.includes(type))
     setAllData(newOne)
-  }
+  } */
   return (
     <>
       {/* Navbar */}
@@ -361,161 +318,90 @@ const DarkVersionOne = () => {
 
       {/* Start */}
       <section className="section">
-        <div className="container ">
-          <div className="row justify-content-center">
-            <div className="col">
-              <div className="section-title text-center mb-4 pb-2">
-                <h4 className="title mb-4">Explore Our Products</h4>
-                {/* <p className="text-muted para-desc mb-0 mx-auto">
-                  We are a huge marketplace dedicated to connecting great
-                  artists of all Cianitc with their fans and unique token
-                  collectors!
-                </p> */}
-              </div>
-            </div>
-            {/*end col*/}
-          </div>
-          {/*end row*/}
-
-          <div className="row justify-content-center mb-4 pb-2">
-            <div className="col filters-group-wrap">
-              <div className="filters-group">
-                <ul className="container-filter mb-0 categories-filter text-center list-unstyled">
-                  <li
-                    className={`list-inline-item categories position-relative text-dark ${type === 'all' ? 'active' : ''
-                      }`}
-                    // data-group="all"
-                    onClick={() => setFilter('all')}
-                  >
-                    <i className="uil uil-browser"></i> All
-                  </li>
-                  <li
-                    className={`list-inline-item categories position-relative text-dark ${type === 'games' ? 'active' : ''
-                      }`}
-                    // data-group="games"
-                    onClick={() => setFilter('games')}
-                  >
-                  Electronics
-                  </li>
-                  <li
-                    className={`list-inline-item categories position-relative text-dark ${type === 'art' ? 'active' : ''
-                      }`}
-                    // data-group="art"
-                    onClick={() => setFilter('art')}
-                  >
-                  Software
-                  </li>
-                  <li
-                    className={`list-inline-item categories position-relative text-dark ${type === 'music' ? 'active' : ''
-                      }`}
-                    // data-group="music"
-                    onClick={() => setFilter('music')}
-                  >
-                  Household
-                  </li>
-                  <li
-                    className={`list-inline-item categories position-relative text-dark ${type === 'video' ? 'active' : ''
-                      }`}
-                    // data-group="video"
-                    onClick={() => setFilter('video')}
-                  >
-                  Fashion
-                  </li>
-                  <li
-                    className={`list-inline-item categories position-relative text-dark ${type === 'meme' ? 'active' : ''
-                      }`}
-                    // data-group="memes"
-                    onClick={() => setFilter('meme')}
-                  >
-                  Workshop Equipment
-                  </li>
-                  <li
-                    className={`list-inline-item categories position-relative text-dark ${type === 'meme' ? 'active' : ''
-                      }`}
-                    // data-group="memes"
-                    onClick={() => setFilter('')}
-                  >
-                  Health Care
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/*end col*/}
-          </div>
-          {/*end row*/}
-
-          <div
-            className="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 g-4"
-            id="grid"
-          >
-            {allData?.map(data => {
-              return (
-                <div className="col picture-item" key={data?.title}>
-                  <div className="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1">
-                    <div className="nft-image position-relative overflow-hidden">
-                      <img src={data?.image} className="img-fluid" alt="" />
-                      <div className="position-absolute top-0 end-0 m-2">
-                        <span className="like-icon shadow-sm">
-                          <a
-                            href=""
-                            onClick={e => e.preventDefault()}
-                            className="text-muted icon"
-                          >
-                            <i className="mdi mdi-18px mdi-heart mb-0"></i>
-                          </a>
-                        </span>
-                      </div>
+        <div className="container">
+          <div className="row g-4">
+            {collectionData?.map((collection, index) => (
+              <div className="col-lg-4 col-md-6" key={index}>
+                <div className="card collections collection-primary rounded-md shadow p-2 pb-0">
+                  <div className="row g-2">
+                    <div className="col-12">
+                      <img
+                        src={collection?.img1}
+                        className="img-fluid shadow-sm rounded-md"
+                        alt=""
+                      />
                     </div>
+                    {/*end col*/}
 
-                    <div className="card-body content position-relative">
-                      <div className="mt-2">
-                        <a
-                          href="/item-detail-one"
-                          onClick={e => {
-                            e.preventDefault()
-                            navigate('/item-detail-one')
-                          }}
-                          className="title text-dark h6"
-                        >
-                          {data?.title}
-                        </a>
+                    <div className="col-4">
+                      <img
+                        src={collection?.img2}
+                        className="img-fluid shadow-sm rounded-md"
+                        alt=""
+                      />
+                    </div>
+                    {/*end col*/}
 
-                        <div className="d-flex justify-content-between mt-2">
-                          <small className="rate fw-bold">LKR {data?.price}</small>
-                          <small className="text-dark fw-bold">
-                          {data?.quantity}
-                          </small>
-                        </div>
-                      </div>
+                    <div className="col-4">
+                      <img
+                        src={collection?.img3}
+                        className="img-fluid shadow-sm rounded-md"
+                        alt=""
+                      />
+                    </div>
+                    {/*end col*/}
+
+                    <div className="col-4">
+                      <img
+                        src={collection?.img4}
+                        className="img-fluid shadow-sm rounded-md"
+                        alt=""
+                      />
+                    </div>
+                    {/*end col*/}
+                  </div>
+                  {/*end row*/}
+
+                  <div className="content text-center p-4 mt-n5">
+                    <div className="position-relative d-inline-flex">
+                    </div>
+                    <div className="mt-2">
+                      <a
+                        href="/explore-four"
+                        onClick={e => {
+                          e.preventDefault()
+                          navigate('/explore-four')
+                        }}
+                        className="text-dark title h5"
+                      >
+                        {collection?.title}
+                      </a>
+                      <p className="text-muted mb-0 small">27 Items</p>
                     </div>
                   </div>
                 </div>
-              )
-            })}
-            {/*end col*/}
+              </div>
+            ))}
           </div>
           <div className="row justify-content-center mt-4">
             <div className="col">
               <div className="text-center">
                 <a
-                  href="/aboutus"
+                  href="/explore-one"
                   onClick={e => {
                     e.preventDefault()
                     navigate('/explore-one')
                   }}
                   className="btn btn-primary rounded-md"
                 >
-                  <i className="uil uil-process mdi-spin me-1"></i> Visit the Marketplace
+                  <i className="uil uil-process mdi-spin me-1"></i> Visit Markeplace
                 </a>
               </div>
             </div>
             {/*end col*/}
           </div>
-          {/*end row*/}
         </div>
         {/*end container*/}
-        {/*end section*/}
-        {/* End */}
       </section>
       {/* footer */}
       <Footer />
