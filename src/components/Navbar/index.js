@@ -355,28 +355,6 @@ const Navbar = () => {
                           Calvin Carlo
                         </h6>
                       </div>
-                      {/* <div className="mt-2">
-                        <small className="text-start text-dark d-block fw-bold">
-                          Wallet:
-                        </small>
-                        <div className="d-flex justify-content-between align-items-center">
-                          <small id="myPublicAddress" className="text-muted">
-                            {myPublicAddress}
-                          </small>
-                          <a href="" onClick={e => e.preventDefault()} className="text-primary">
-                            <span className="uil uil-copy"></span>
-                          </a>
-                        </div>
-                      </div> */}
-
-                      {/* <div className="mt-2">
-                        <small className="text-dark">
-                          Balance:{' '}
-                          <span className="text-primary fw-bold">
-                            0.00045ETH
-                          </span>
-                        </small>
-                      </div> */}
                     </div>
                   </div>
                   <div className="mt-2">
@@ -479,19 +457,19 @@ const Navbar = () => {
 
               <li>
                 <a
-                  href="/activity"
+                  href="/auction"
                   onClick={e => {
                     e.preventDefault()
                     setTimeout(() => {
                       activateMenu()
                       toggleSwitcher(false)
                     }, 1000)
-                    navigate('/activity')
+                    navigate('/auction')
                   }}
                   className="sub-menu-item"
                 >
                   {' '}
-                  Activity
+                  Live Auction
                 </a>
               </li>
 
@@ -632,69 +610,6 @@ const Navbar = () => {
                     >
                       Collections
                     </a>
-                  </li>
-                  <li className="has-submenu parent-menu-item">
-                    <a href="" onClick={e => mobileHandler(e, 'blog')}>
-                      {' '}
-                      Blog{' '}
-                    </a>
-                    <span className="submenu-arrow"></span>
-                    <ul
-                      className={`submenu ${mobile.includes('blog') ? 'open' : ''
-                        }`}
-                    >
-                      <li>
-                        <a
-                          href="/blogs"
-                          onClick={e => {
-                            e.preventDefault()
-                            setTimeout(() => {
-                              activateMenu()
-                              toggleSwitcher(false)
-                            }, 1000)
-                            navigate('/blogs')
-                          }}
-                          className="sub-menu-item"
-                        >
-                          {' '}
-                          Blogs
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/blog-sidebar"
-                          onClick={e => {
-                            e.preventDefault()
-                            setTimeout(() => {
-                              activateMenu()
-                              toggleSwitcher(false)
-                            }, 1000)
-                            navigate('/blog-sidebar')
-                          }}
-                          className="sub-menu-item"
-                        >
-                          {' '}
-                          Blog with sidebar
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/blog-detail"
-                          onClick={e => {
-                            e.preventDefault()
-                            setTimeout(() => {
-                              activateMenu()
-                              toggleSwitcher(false)
-                            }, 1000)
-                            navigate('/blog-detail')
-                          }}
-                          className="sub-menu-item"
-                        >
-                          {' '}
-                          Blog Detail
-                        </a>
-                      </li>
-                    </ul>
                   </li>
                   <li className="has-submenu parent-menu-item">
                     <a href="" onClick={e => mobileHandler(e, 'auth')}>
