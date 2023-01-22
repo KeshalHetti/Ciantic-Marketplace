@@ -499,49 +499,16 @@ const Navbar = () => {
                   className={`submenu ${mobile.includes('pages') ? 'open' : ''
                     }`}
                 >
-                  <li>
-                    <a
-                      href="/aboutus"
-                      onClick={e => {
-                        e.preventDefault()
-                        setTimeout(() => {
-                          activateMenu()
-                          toggleSwitcher(false)
-                        }, 1000)
-                        navigate('/aboutus')
-                      }}
-                      className="sub-menu-item"
-                    >
-                      About Us
-                    </a>
-                  </li>
                   <li className="has-submenu parent-menu-item">
                     <a href="" onClick={e => mobileHandler(e, 'creators')}>
                       {' '}
-                      Creator{' '}
+                      User Pages{' '}
                     </a>
                     <span className="submenu-arrow"></span>
                     <ul
                       className={`submenu ${mobile.includes('creators') ? 'open' : ''
                         }`}
                     >
-                      <li>
-                        <a
-                          href="/creators"
-                          onClick={e => {
-                            e.preventDefault()
-                            setTimeout(() => {
-                              activateMenu()
-                              toggleSwitcher(false)
-                            }, 1000)
-                            navigate('/creators')
-                          }}
-                          className="sub-menu-item"
-                        >
-                          {' '}
-                          Creators
-                        </a>
-                      </li>
                       <li>
                         <a
                           href="/creator-profile"
@@ -556,7 +523,7 @@ const Navbar = () => {
                           className="sub-menu-item"
                         >
                           {' '}
-                          Creator Profile
+                          Admin Panel
                         </a>
                       </li>
                       <li>
@@ -594,22 +561,6 @@ const Navbar = () => {
                         </a>
                       </li>
                     </ul>
-                  </li>
-                  <li>
-                    <a
-                      href="/collections"
-                      onClick={e => {
-                        e.preventDefault()
-                        setTimeout(() => {
-                          activateMenu()
-                          toggleSwitcher(false)
-                        }, 1000)
-                        navigate('/collections')
-                      }}
-                      className="sub-menu-item"
-                    >
-                      Collections
-                    </a>
                   </li>
                   <li className="has-submenu parent-menu-item">
                     <a href="" onClick={e => mobileHandler(e, 'auth')}>
