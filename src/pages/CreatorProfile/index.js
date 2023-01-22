@@ -17,52 +17,7 @@ const CreateProfile = () => {
 
   const createdData = [
     {
-      image: gif1,
-      title: 'Deep Sea Phantasy',
-      type: 'GIFs',
-      id: 'May 29, 2022 6:0:0'
-    },
-    {
-      image: item1,
-      title: 'CyberPrimal 042 LAN',
-      type: 'Arts',
-      id: ''
-    },
-    {
-      image: gif2,
-      title: 'Crypto Egg Stamp #5',
-      type: 'Games',
-      id: ''
-    },
-    {
-      image: item2,
-      title: 'Colorful Abstract Painting',
-      type: '',
-      id: 'June 03, 2022 5:3:1'
-    },
-    {
-      image: item3,
-      title: 'Liquid Forest Princess',
-      type: '',
-      id: ''
-    },
-    {
-      image: gif3,
-      title: 'Spider Eyes Modern Art',
-      type: 'GIFs',
-      id: 'June 10, 2022 1:0:1'
-    },
-    {
-      image: item4,
-      title: 'Synthwave Painting',
-      type: '',
-      id: ''
-    },
-    {
-      image: gif4,
-      title: 'Contemporary Abstract',
-      type: 'GIFs',
-      id: ''
+      title: 'Total Emails Sent',
     },
   ]
   const onSaleData = [
@@ -267,21 +222,13 @@ const CreateProfile = () => {
                 </div>
 
                 <div className="content mt-3">
-                  <h5 className="mb-3">streetboyyy</h5>
-                  <small className="text-muted px-2 py-1 rounded-lg shadow">
-                    bhcedeh5sdijuj-husac4saiu{' '}
-                    <a
-                      href=""
-                      onClick={e => e.preventDefault()}
-                      className="text-primary h5 ms-1"
-                    >
-                      <i className="uil uil-copy"></i>
-                    </a>
-                  </small>
-
+                  <h4 className="mb-3">Admin Panel</h4>
                   <h6 className="mt-3 mb-0">
-                    Artist, UX / UI designer, and Entrepreneur
+                    Ciantic Markeplace Administrator
                   </h6>
+                  <small className="mt-3 mb-0">
+                    Date Created: <b>15th Sep 2022</b>
+                  </small>
 
                   <div className="mt-4">
                     <a
@@ -310,8 +257,9 @@ const CreateProfile = () => {
             </div>
           </div>
         </div>
-
         <div className="container mt-100 mt-60">
+        <h3 className=" row justify-content-center content mt-3 mt-3 mb-0">Dashboard</h3>
+        <br/>
           <div className="row">
             <div className="col-12">
               <ul
@@ -330,7 +278,7 @@ const CreateProfile = () => {
                     aria-controls="CreateItem"
                     aria-selected="true"
                   >
-                    Created
+                    Emails Sent
                   </button>
                 </li>
 
@@ -345,7 +293,7 @@ const CreateProfile = () => {
                     aria-controls="Liked"
                     aria-selected="false"
                   >
-                    Liked
+                    Total Users
                   </button>
                 </li>
 
@@ -360,7 +308,7 @@ const CreateProfile = () => {
                     aria-controls="Sale"
                     aria-selected="false"
                   >
-                    On Sale
+                    Total Posts
                   </button>
                 </li>
 
@@ -375,7 +323,7 @@ const CreateProfile = () => {
                     aria-controls="Collection"
                     aria-selected="false"
                   >
-                    Collection
+                    Tickets
                   </button>
                 </li>
 
@@ -390,37 +338,7 @@ const CreateProfile = () => {
                     aria-controls="Activites"
                     aria-selected="false"
                   >
-                    Activites
-                  </button>
-                </li>
-
-                <li className="nav-item" role="presentation">
-                  <button
-                    className="nav-link"
-                    id="Followers-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#Followers"
-                    type="button"
-                    role="tab"
-                    aria-controls="Followers"
-                    aria-selected="false"
-                  >
-                    Followers
-                  </button>
-                </li>
-
-                <li className="nav-item" role="presentation">
-                  <button
-                    className="nav-link"
-                    id="About-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#About"
-                    type="button"
-                    role="tab"
-                    aria-controls="About"
-                    aria-selected="false"
-                  >
-                    About
+                    Traffic Received
                   </button>
                 </li>
               </ul>
@@ -437,101 +355,6 @@ const CreateProfile = () => {
                     {createdData?.map(data => (
                       <div className="col" key={data?.title}>
                         <div className="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
-                          <div className="d-flex justify-content-between">
-                            <div className="img-group">
-                              <a
-                                href="/creator-profile"
-                                onClick={e => {
-                                  e.preventDefault()
-                                  navigate('/creator-profile')
-                                }}
-                                className="user-avatar"
-                              >
-                                <img
-                                  src={client08}
-                                  alt="user"
-                                  className="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle"
-                                />
-                              </a>
-                              <a
-                                href="/creator-profile"
-                                onClick={e => {
-                                  e.preventDefault()
-                                  navigate('/creator-profile')
-                                }}
-                                className="user-avatar ms-n3"
-                              >
-                                <img
-                                  src={client05}
-                                  alt="user"
-                                  className="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle"
-                                />
-                              </a>
-                              <a
-                                href="/creator-profile"
-                                onClick={e => {
-                                  e.preventDefault()
-                                  navigate('/creator-profile')
-                                }}
-                                className="user-avatar ms-n3"
-                              >
-                                <img
-                                  src={client06}
-                                  alt="user"
-                                  className="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle"
-                                />
-                              </a>
-                            </div>
-
-                            <span className="like-icon shadow-sm">
-                              <a
-                                href=""
-                                onClick={e => e.preventDefault()}
-                                className="text-muted icon"
-                              >
-                                <i className="mdi mdi-18px mdi-heart mb-0"></i>
-                              </a>
-                            </span>
-                          </div>
-
-                          <div className="nft-image rounded-md mt-3 position-relative overflow-hidden">
-                            <a
-                              href="/item-detail-one"
-                              onClick={e => {
-                                e.preventDefault()
-                                navigate('/item-detail-one')
-                              }}
-                            >
-                              <img
-                                src={data?.image}
-                                className="img-fluid"
-                                alt=""
-                              />
-                            </a>
-                            {data?.type && (
-                              <div className="position-absolute top-0 start-0 m-2">
-                                <a
-                                  href=""
-                                  onClick={e => e.preventDefault()}
-                                  className="badge badge-link bg-primary"
-                                >
-                                  GIFs
-                                </a>
-                              </div>
-                            )}
-                            <div className={`${data?.id ? '' : 'hide-data'} position-absolute bottom-0 start-0 m-2 bg-gradient-primary text-white title-dark rounded-pill px-3`}>
-                              <i className="uil uil-clock"></i>
-                              <Countdown
-                                date={data?.id}
-                                renderer={({ days, hours, minutes, seconds }) => (
-                                  <span>
-                                    {days}:{hours}:{minutes}:{seconds}
-                                  </span>
-                                )}
-                              />
-                            </div>
-                          </div>
-
                           <div className="card-body content position-relative p-0 mt-3">
                             <a
                               href="/item-detail-one"
@@ -541,14 +364,13 @@ const CreateProfile = () => {
                               }}
                               className="title text-dark h6"
                             >
-                              {data?.title}
+                             <center>{data?.title}</center> 
                             </a>
 
-                            <div className="d-flex justify-content-between mt-2">
-                              <small className="rate fw-bold">20.5 ETH</small>
-                              <small className="text-dark fw-bold">
-                                1 out of 10
-                              </small>
+                            <div className="mt-2">
+                              <center>
+                              <small className="rate fw-bold">50 Emails</small>
+                              </center>
                             </div>
                           </div>
                         </div>
@@ -564,20 +386,32 @@ const CreateProfile = () => {
                   role="tabpanel"
                   aria-labelledby="Liked-tab"
                 >
-                  <div className="row justify-content-center">
-                    <div className="col-lg-5 col-md-8 text-center">
-                      <img src={ofcDesk} className="img-fluid" alt="" />
+                  <div className="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1 g-4">
+                    {createdData?.map(data => (
+                      <div className="col" key={data?.title}>
+                        <div className="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
+                          <div className="card-body content position-relative p-0 mt-3">
+                            <a
+                              href="/item-detail-one"
+                              onClick={e => {
+                                e.preventDefault()
+                                navigate('/item-detail-one')
+                              }}
+                              className="title text-dark h6"
+                            >
+                             <center>Total Users</center> 
+                            </a>
 
-                      <div className="content">
-                        <h5 className="mb-4">No Items</h5>
-                        <p className="text-muted">
-                          Show your appreciation for other's work by liking the
-                          shots you love. We'll collect all of your likes here
-                          for you to revisit anytime.
-                        </p>
+                            <div className="mt-2">
+                              <center>
+                              <small className="rate fw-bold">5 Users</small>
+                              </center>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    {/* end col */}
+                    ))}
+                    {/*end row*/}
                   </div>
                   {/* end row */}
                 </div>
@@ -589,62 +423,9 @@ const CreateProfile = () => {
                   aria-labelledby="Sale-tab"
                 >
                   <div className="row row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1 g-4">
-                    {onSaleData?.map((onSale, index) => (
-                      <div className="col" key={index}>
-                        <div className="card nft-items nft-primary nft-auction rounded-md shadow overflow-hidden mb-1 p-3">
-                          <div className="d-flex align-items-center justify-content-between">
-                            <div className="d-flex align-items-center">
-                              <img
-                                src={client01}
-                                alt="user"
-                                className="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle"
-                              />
-                              <a
-                                href=""
-                                onClick={e => e.preventDefault()}
-                                className="text-dark small creator-name h6 mb-0 ms-2"
-                              >
-                                @StreetBoyyy
-                              </a>
-                            </div>
-                          </div>
-
-                          <div className="nft-image rounded-md mt-3 position-relative overflow-hidden">
-                            <a
-                              href="/item-detail-one"
-                              onClick={e => {
-                                e.preventDefault()
-                                navigate('/item-detail-one')
-                              }}
-                            >
-                              <img
-                                src={onSale?.image}
-                                className="img-fluid"
-                                alt=""
-                              />
-                            </a>
-                            <div className="position-absolute top-0 start-0 m-2">
-                              <a
-                                href=""
-                                onClick={e => e.preventDefault()}
-                                className="badge badge-link bg-primary"
-                              >
-                                {onSale?.type}
-                              </a>
-                            </div>
-                            <div className="position-absolute top-0 end-0 m-2">
-                              <span className="like-icon shadow-sm">
-                                <a
-                                  href=""
-                                  onClick={e => e.preventDefault()}
-                                  className="text-muted icon"
-                                >
-                                  <i className="mdi mdi-18px mdi-heart mb-0"></i>
-                                </a>
-                              </span>
-                            </div>
-                          </div>
-
+                    {createdData?.map(data => (
+                      <div className="col" key={data?.title}>
+                        <div className="card nft-items nft-primary rounded-md shadow overflow-hidden mb-1 p-3">
                           <div className="card-body content position-relative p-0 mt-3">
                             <a
                               href="/item-detail-one"
@@ -654,31 +435,19 @@ const CreateProfile = () => {
                               }}
                               className="title text-dark h6"
                             >
-                              {onSale?.title}
+                             <center>Total Posts</center> 
                             </a>
 
-                            <div className="d-flex align-items-center justify-content-between mt-3">
-                              <div className="">
-                                <small className="mb-0 d-block fw-semibold">
-                                  Current Bid:
-                                </small>
-                                <small className="rate fw-bold">20.5 ETH</small>
-                              </div>
-                              <a
-                                href="/item-detail-one"
-                                onClick={e => {
-                                  e.preventDefault()
-                                  navigate('/item-detail-one')
-                                }}
-                                className="btn btn-icon btn-pills btn-primary"
-                              >
-                                <i className="uil uil-shopping-bag"></i>
-                              </a>
+                            <div className="mt-2">
+                              <center>
+                              <small className="rate fw-bold">0 Posts</small>
+                              </center>
                             </div>
                           </div>
                         </div>
                       </div>
                     ))}
+                    {/*end row*/}
                   </div>
                   {/*end row*/}
                 </div>
@@ -694,12 +463,7 @@ const CreateProfile = () => {
                       <img src={prodToCard} className="img-fluid" alt="" />
 
                       <div className="content mt-4">
-                        <h5 className="mb-4">No Collection</h5>
-                        <p className="text-muted">
-                          Save interesting shots into personalized collections,
-                          and discover new and interesting recommendations along
-                          the way.
-                        </p>
+                        <h5 className="mb-4">No Tickets</h5>
                       </div>
                     </div>
                     {/*end col*/}
