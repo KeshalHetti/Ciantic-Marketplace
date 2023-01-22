@@ -461,7 +461,7 @@ const ItemDetailOne = () => {
           <div className="modal-content border-0 shadow-md rounded-md">
             <div className="modal-header">
               <h5 className="modal-title" id="bidtitle">
-                Place a Bid
+                Add Item to Your Cart.
               </h5>
               <button
                 type="button"
@@ -478,36 +478,17 @@ const ItemDetailOne = () => {
                   <div className="col-12">
                     <div className="mb-4">
                       <label className="form-label fw-bold">
-                        Your Bid Price <span className="text-danger">*</span>
-                      </label>
-                      <input
-                        name="name"
-                        id="name"
-                        type="text"
-                        className="form-control"
-                        placeholder="00.00 ETH"
-                      />
-                      <small className="text-muted">
-                        <span className="text-dark">Note:</span> Bid price at
-                        least 1 ETH
-                      </small>
-                    </div>
-                  </div>
-                  {/*end col*/}
-                  <div className="col-12">
-                    <div className="mb-4">
-                      <label className="form-label fw-bold">
-                        Enter Your QTY <span className="text-danger">*</span>
+                        Enter Item Quantity <span className="text-danger">*</span>
                       </label>
                       <input
                         name="email"
                         id="email"
                         type="email"
                         className="form-control"
-                        placeholder="0"
+                        placeholder="1"
                       />
                       <small className="text-muted">
-                        <span className="text-dark">Note:</span> Max. Qty 5
+                        <span className="text-dark">Note:</span> Max. 5 Items at Once!
                       </small>
                     </div>
                   </div>
@@ -517,16 +498,16 @@ const ItemDetailOne = () => {
 
               <div className="pt-3 border-top">
                 <div className="d-flex justify-content-between">
-                  <p className="fw-bold small"> You must bid at least:</p>
-                  <p className="text-primary"> 1.22 ETH </p>
+                  <p className="fw-bold small"> Item Price:</p>
+                  <p className="text-primary"> LKR 600,000 </p>
                 </div>
                 <div className="d-flex justify-content-between">
-                  <p className="fw-bold small"> Service free:</p>
-                  <p className="text-primary"> 0.05 ETH </p>
+                  <p className="fw-bold small"> Delivery Charge:</p>
+                  <p className="text-primary"> LKR 1,500 </p>
                 </div>
                 <div className="d-flex justify-content-between">
-                  <p className="fw-bold small"> Total bid amount:</p>
-                  <p className="text-primary mb-0"> 1.27 ETH </p>
+                  <p className="fw-bold small"> Total Amount:</p>
+                  <p className="text-primary mb-0"> LKR 601,500 </p>
                 </div>
               </div>
             </div>
@@ -536,7 +517,7 @@ const ItemDetailOne = () => {
                 data-bs-target="#placebid"
                 data-bs-toggle="modal"
               >
-                <i className="mdi mdi-gavel fs-5 me-2"></i> Place a Bid
+                <i className="fs-5 me-2"> {<AddShoppingCartRoundedIcon />}</i> Add to Cart
               </button>
             </div>
           </div>
@@ -553,7 +534,7 @@ const ItemDetailOne = () => {
           <div className="modal-content border-0 shadow-md rounded-md">
             <div className="modal-header">
               <h5 className="modal-title" id="bidsuccess">
-                Bidding Successful
+                Item Added Successful
               </h5>
               <button
                 type="button"
@@ -565,7 +546,7 @@ const ItemDetailOne = () => {
               </button>
             </div>
             <div className="modal-body p-4">
-              your bid (1.27ETH) has been listing to our database
+              Your Item (LKR 601,500) has been Added to Your Cart!
             </div>
             <div className="modal-footer">
               <a
@@ -577,7 +558,7 @@ const ItemDetailOne = () => {
                 data-bs-toggle="modal"
                 className="btn btn-pills btn-primary"
               >
-                <i className="mdi mdi-basket-plus fs-5 me-2"></i> View Your Bid
+                <i className="mdi mdi-basket-plus fs-5 me-2"></i> View Your Cart
               </a>
             </div>
           </div>
@@ -610,37 +591,40 @@ const ItemDetailOne = () => {
             </div>
             <div className="modal-body p-4">
               <form>
-                <div className="row">
-                  <div className="col-12">
-                    <div className="mb-4">
-                      <label className="form-label fw-bold">
-                        Your Price <span className="text-danger">*</span>
-                      </label>
-                      <input
-                        name="name"
-                        id="name"
-                        type="text"
-                        className="form-control"
-                        defaultValue="1.5ETH"
-                      />
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="mb-4">
+                        <label className="form-label fw-bold">
+                          Enter Item Quantity <span className="text-danger">*</span>
+                        </label>
+                        <input
+                          name="email"
+                          id="email"
+                          type="email"
+                          className="form-control"
+                          placeholder="1"
+                        />
+                        <small className="text-muted">
+                          <span className="text-dark">Note:</span> Max. 5 Items at Once!
+                        </small>
+                      </div>
                     </div>
+                    {/*end col*/}
                   </div>
-                  {/*end col*/}
-                </div>
-              </form>
+                </form>
 
-              <div className="py-3 border-top">
+                <div className="pt-3 border-top">
                 <div className="d-flex justify-content-between">
-                  <p className="fw-bold small"> You must bid at least:</p>
-                  <p className="text-primary"> 1.22 ETH </p>
+                  <p className="fw-bold small"> Item Price:</p>
+                  <p className="text-primary"> LKR 600,000 </p>
                 </div>
                 <div className="d-flex justify-content-between">
-                  <p className="fw-bold small"> Service free:</p>
-                  <p className="text-primary"> 0.05 ETH </p>
+                  <p className="fw-bold small"> Delivery Charge:</p>
+                  <p className="text-primary"> LKR 1,500 </p>
                 </div>
                 <div className="d-flex justify-content-between">
-                  <p className="fw-bold small"> Total bid amount:</p>
-                  <p className="text-primary mb-0"> 1.27 ETH </p>
+                  <p className="fw-bold small"> Total Amount:</p>
+                  <p className="text-primary mb-0"> LKR 601,500 </p>
                 </div>
               </div>
 
@@ -648,7 +632,7 @@ const ItemDetailOne = () => {
                 <div className="d-flex align-items-center">
                   <i className="uil uil-exclamation-circle h2 mb-0 me-2"></i>
                   <div className="flex-1">
-                    <h6 className="mb-0">This creator is not verified</h6>
+                    <h6 className="mb-0">This Seller is not verified</h6>
                     <small className="mb-0">
                       Purchase this item at your own risk
                     </small>
@@ -715,9 +699,9 @@ const ItemDetailOne = () => {
               <h6 className="text-muted mb-0">
                 You successfully purchased{' '}
                 <a href="" className="text-reset">
-                  <u>XYZ nft</u>
+                  <u>Iphone 14 Pro Max</u>
                 </a>{' '}
-                from Cianitc
+                from Cianitc Market
               </h6>
 
               <ul className="rounded-md shadow p-4 border list-unstyled mt-4">
@@ -728,7 +712,7 @@ const ItemDetailOne = () => {
 
                 <li className="d-flex justify-content-between mt-2">
                   <span className="fw-bold me-5">Transaction ID:</span>
-                  <span className="text-muted">qhut0...hfteh45</span>
+                  <span className="text-muted">hweZa...hfteh45</span>
                 </li>
               </ul>
 
