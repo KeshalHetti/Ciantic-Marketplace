@@ -13,17 +13,17 @@ const ExploreOne = () => {
   const navigate = useNavigate()
   const AuctionData = [
     {
-      image: item3,
-      title: 'Samsung Galaxy S22 Ultra',
-      price: 400000,
+      image: item7,
+      title: 'Iphone 14 Pro Max',
+      price: 600000,
       quantity: '15 In Stock',
       type: 'Arts',
       filter: ['all', 'art'],
     },
     {
-      image: item7,
-      title: 'Iphone 14 Pro Max',
-      price: 600000,
+      image: item3,
+      title: 'Samsung Galaxy S22 Ultra',
+      price: 400000,
       quantity: '15 In Stock',
       type: 'Arts',
       filter: ['all', 'art'],
