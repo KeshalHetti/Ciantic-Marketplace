@@ -3,7 +3,6 @@ import Login from './pages/Login'
 import Error from './pages/Error'
 import SignUp from './pages/SignUp'
 import ResetPassword from './pages/ResetPassword'
-import AboutUs from './pages/AboutUs'
 import ComingSoon from './pages/ComingSoon'
 import Maintenance from './pages/Maintenance'
 import LockScreen from './pages/LockScreen'
@@ -13,11 +12,9 @@ import Guides from './pages/Guides'
 import Faqs from './pages/Faqs'
 import Contact from './pages/Contact'
 import UploadWork from './pages/UploadWork'
-import Collections from './pages/Collections'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import BecomeCreator from './pages/BecomeCreator'
 import CreateProfile from './pages/CreatorProfile'
-import Creator from './pages/Creator'
 import Wallet from './pages/Walllet'
 import Activity from './pages/Activity'
 import ItemDetailOne from './pages/ItemDetailOne'
@@ -53,14 +50,11 @@ export default function Router() {
         <Route exact path="/helpcenter-faqs" element={<Faqs />} />
 
         {/*page routes  */}
-        <Route exact path="/aboutus" element={<AboutUs />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/upload-work" element={<UploadWork />} />
-        <Route exact path="/collections" element={<Collections />} />
         <Route exact path="/become-creator" element={<BecomeCreator />} />
         <Route exact path="/creator-profile" element={<CreateProfile />} />
         <Route exact path="/creator-profile-edit" element={<CreatorProfileEdit />} />
-        <Route exact path="/creators" element={<Creator />} />
         <Route exact path="/wallet" element={<Wallet />} />
         <Route exact path="/activity" element={<Activity />} />
         <Route exact path="/item-detail-one" element={<ItemDetailOne />} />
