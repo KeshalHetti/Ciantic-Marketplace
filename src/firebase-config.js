@@ -1,26 +1,33 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getFireStore } from "@firebase/firestore";
+import { initializeApp, getApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyDbijxTmNRXKi0j1Dda0BiLWniEUg4l6UE",
-  authDomain: "ciantic-marketplace-e0806.firebaseapp.com",
-  projectId: "ciantic-marketplace-e0806",
-  storageBucket: "ciantic-marketplace-e0806.appspot.com",
-  messagingSenderId: "853030423696",
-  appId: "1:853030423696:web:f06acec45b4df8cb5e5c15",
-  measurementId: "G-JSRZSRHDEJ"
-};
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+function initializeAppIfNecessary() {
+  try {
+    return getApp();
+  } catch (any) {
+    const firebaseConfig = {
+      apiKey: "AIzaSyApOhLOayzmxuht1VAzexOBcSLpoLe9TD4",
+      authDomain: "ciantic-marketplace.firebaseapp.com",
+      projectId: "ciantic-marketplace",
+      storageBucket: "ciantic-marketplace.appspot.com",
+      messagingSenderId: "970911288012",
+      appId: "1:970911288012:web:a74d69df12efa7f6331069",
+      measurementId: "G-G9ZH32JWEE"
+    };
+    return initializeApp(firebaseConfig);
+  }
+}
 
-const db = getFireStore(app)
+export const app = initializeAppIfNecessary();
+export const auth = getAuth(app);
 
+export const db = getFirestore(app)
 
