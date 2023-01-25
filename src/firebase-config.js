@@ -24,11 +24,3 @@ const analytics = getAnalytics(app);
 const db = getFireStore(app)
 
 
-
-// {itemname: "Samsung Galaxy S22 Ultra", price: 400000, quantity:20}
-// {itemname: "Iphone 14 Pro Max", price: 600000, quantity:15}
-// {itemname: "Sony Alpha 7", price: 200, quantity:30}
-// {itemname: "SAMSUNG 43-Inch Class Crystal 4K UHD AU8000 Series HDR", price: 900000, quantity:12}
-// {itemname: "Google Nest Cam Outdoor or Indoor", price: 300000, quantity:50}
-
-
