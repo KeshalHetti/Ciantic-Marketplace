@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import SearchBar from '../../components/SearchBar'
+import Box from '@mui/material/Box';
 import {
   bgImage, item1, item2, item3, item4, item5, item6, item7, item12,
   gif1, gif2, gif3, gif4, gif5, gif6,
