@@ -3,6 +3,11 @@ import { useNavigate } from 'react-router-dom'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import { bg01, office } from '../../components/imageImport'
+import Chatbot from 'react-chatbot-kit'
+import 'react-chatbot-kit/build/main.css';
+import ActionProvider from '../../ActionProvider';
+import MessageParser from '../../MessageParser';
+import config from '../../config';
 
 const Contact = () => {
   const navigate = useNavigate()
@@ -61,6 +66,95 @@ const Contact = () => {
       }
     }, 200);
   }
+  const steps = [
+
+    {
+
+      id: "Greet",
+
+      message: "Hello, Welcome to our shop",
+
+      trigger: "Done",
+
+    },
+
+    {
+
+      id: "Done",
+
+      message: "Please enter your name!",
+
+      trigger: "waiting1",
+
+    },
+
+    {
+
+      id: "waiting1",
+
+      user: true,
+
+      trigger: "Name",
+
+    },
+
+    {
+
+      id: "Name",
+
+      message: "Hi {previousValue}, Please select your issue",
+
+      trigger: "issues",
+
+    },
+
+    {
+
+      id: "issues",
+
+      options: [
+
+        {
+
+          value: "React",
+
+          label: "React",
+
+          trigger: "React",
+
+        },
+
+        { value: "Angular", label: "Angular", trigger: "Angular" },
+
+      ],
+
+    },
+
+    {
+
+      id: "React",
+
+      message:
+
+        "Thanks for letting your React issue, Our team will resolve your issue ASAP",
+
+      end: true,
+
+    },
+
+    {
+
+      id: "Angular",
+
+      message:
+
+        "Thanks for letting your Angular issue, Our team will resolve your issue ASAP",
+
+      end: true,
+
+    },
+
+  ];
   return (
     <>
       {/* Navbar */}
@@ -146,7 +240,7 @@ const Contact = () => {
                     Start working with Cianitc that can provide everything
                   </p>
                   <a href="tel:+152534-468-854" className="text-primary">
-                    +152 534-468-854
+                    +94 000 000 000
                   </a>
                 </div>
               </div>
@@ -177,18 +271,13 @@ const Contact = () => {
                   <i className="uil uil-map-marker d-block rounded-md h3 mb-0"></i>
                 </div>
                 <div className="content mt-4 px-4">
-                  <h5 className="fw-bold">Location</h5>
-                  <p className="text-muted">
-                    C/54 Northwest Freeway, Suite 558, <br />
-                    Houston, USA 485
-                  </p>
-                  <a
-                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
-                    data-type="iframe"
-                    className="video-play-icon text-primary lightbox"
-                  >
-                    View on Google map
-                  </a>
+                  <h5 className="fw-bold">Chatbot</h5>
+                  <Chatbot
+                    config={config}
+                    messageParser={MessageParser}
+                    actionProvider={ActionProvider}
+                    steps={steps}
+                  /> 
                 </div>
               </div>
             </div>
@@ -319,24 +408,6 @@ const Contact = () => {
         {/*end container*/}
       </section>
       {/*end section*/}
-
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-12 p-0">
-            <div className="card map border-0">
-              <div className="card-body p-0">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-          </div>
-          {/*end col*/}
-        </div>
-        {/*end row*/}
-      </div>
       {/*end container*/}
       {/* End Section */}
 
