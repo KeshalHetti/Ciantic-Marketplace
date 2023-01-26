@@ -4,9 +4,9 @@ import Navbar from '../../components/Navbar'
 import { creator } from '../../components/imageImport'
 
 const BecomeCreator = () => {
-  const [name, setName] = useState('streetboyyy')
+  const [name, setName] = useState('')
   const [url, setUrl] = useState('https://Cianitc.exe/streetboyyy')
-  const [twitter, _twitter] = useState('https://twitter.com/streetboyyy')
+  const [twitter, _twitter] = useState('')
   const handleChange = () => {
     const fileUploader = document.querySelector('#input-file')
     const getFile = fileUploader.files
@@ -43,15 +43,12 @@ const BecomeCreator = () => {
 
             <div className="col-lg-8 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
               <div className="title-heading">
-                <h6>Join with Cianitc!</h6>
                 <h5 className="heading fw-bold title-dark mb-4">
                   Start Your <br />
                   <span className="text-gradient-primary">Journey</span>
                 </h5>
                 <p className="text-muted mb-0 para-desc">
-                  We are a huge marketplace dedicated to connecting great
-                  artists of all Cianitc with their fans and unique token
-                  collectors!
+                   We are a marketplace dedicated to connecting <br />{' '} Buyers & Sellers from Sri Lanka at <br />{' '} Ciantic Market!
                 </p>
               </div>
             </div>
@@ -85,11 +82,6 @@ const BecomeCreator = () => {
             <div className="col">
               <div className="section-title text-center mb-4 pb-2">
                 <h4 className="title mb-3">Fill the form</h4>
-                <p className="text-muted mb-0 para-desc mx-auto">
-                  We are a huge marketplace dedicated to connecting great
-                  artists of all Cianitc with their fans and unique token
-                  collectors!
-                </p>
               </div>
             </div>
           </div>
@@ -100,7 +92,7 @@ const BecomeCreator = () => {
                   <div className="col-md-5">
                     <div className="d-grid">
                       <p className="fw-semibold">
-                        Upload your ART here, Please click "Upload Image"
+                        Upload your Item Image here, Please click "Upload Image"
                         Button.
                       </p>
                       <div className="preview-box d-block justify-content-center rounded-md shadow overflow-hidden bg-light text-muted p-2 text-center small">
@@ -129,7 +121,7 @@ const BecomeCreator = () => {
                       <form>
                         <div className="row">
                           <div className="col-12 mb-4">
-                            <label className="form-label">Display Name</label>
+                            <label className="form-label">Item Name</label>
                             <input
                               name="name"
                               id="first"
@@ -142,14 +134,14 @@ const BecomeCreator = () => {
                           {/*end col*/}
 
                           <div className="col-12 mb-4">
-                            <label className="form-label">URL</label>
+                            <label className="form-label">Price</label>
                             <div className="form-icon">
                               <input
-                                name="url"
-                                id="Cianitc-url"
-                                type="url"
+                                name="name"
+                                id="first"
+                                type="text"
                                 className="form-control"
-                                value={url}
+                                value={name}
                                 onChange={e => setUrl(e.target.value)}
                               />
                             </div>
@@ -157,25 +149,21 @@ const BecomeCreator = () => {
                           {/*end col*/}
 
                           <div className="col-12 mb-4">
-                            <label className="form-label">Bio</label>
+                            <label className="form-label">Item Specifications</label>
                             <textarea
                               name="comments"
                               id="comments"
                               rows="3"
                               className="form-control"
-                              placeholder="I'm a Digital Artist. Digital Art with over 3 years of experience. Experienced with all stages of the Art cycle for dynamic projects."
+                              placeholder=""
                             ></textarea>
                           </div>
                           {/*end col*/}
 
                           <div className="col-12 mb-4">
                             <label className="form-label d-block">
-                              Twitter Account
+                              Item Description
                             </label>
-                            <small className="text-muted d-block">
-                              Link your twitter account to gain more trust on
-                              the Marketplace
-                            </small>
                             <div className="form-icon mt-3">
                               <input
                                 name="url"
