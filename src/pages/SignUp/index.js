@@ -1,10 +1,33 @@
-import React from 'react'
+import {React, useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'
 import { cianticLogo } from '../../components/imageImport'
+import { auth } from '../../firebase-config'
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+  deleteUser
+} from "firebase/auth";
 
 const SignUp = () => {
   const navigate = useNavigate()
+  const [registerEmail, setRegisterEmail] = useState("");
+  const [registerPassword, setRegisterPassword] = useState("");
+
+  const register = async () => {
+    try {
+      const user = await createUserWithEmailAndPassword(
+        auth,
+        registerEmail,
+        registerPassword
+      );
+      console.log(user);
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
 
   return (
     <>
@@ -53,7 +76,7 @@ const SignUp = () => {
                               type="email"
                               className="form-control"
                               id="RegisterEmail"
-                              placeholder="name@example.com"
+                              placeholder="name@example.com" onChange={(event) => {setRegisterEmail(event.target.value);}}
                             />
                             <label htmlFor="RegisterEmail">Email Address</label>
                           </div>
@@ -66,7 +89,7 @@ const SignUp = () => {
                               type="password"
                               className="form-control"
                               id="RegisterPassword"
-                              placeholder="Password"
+                              placeholder="Password" onChange={(event) => {setRegisterPassword(event.target.value);}}
                             />
                             <label htmlFor="RegisterPassword">Password</label>
                           </div>
@@ -101,7 +124,7 @@ const SignUp = () => {
                         <div className="col-lg-12">
                           <button
                             className="btn btn-primary rounded-md w-100"
-                            type="submit"
+                            onClick={register}
                           >
                             Register
                           </button>
