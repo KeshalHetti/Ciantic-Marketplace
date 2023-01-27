@@ -105,12 +105,12 @@ const Login = () => {
                         </div>
                         {/* end col */}
                         <div className="col-lg-12">
-                          <button
-                            className="btn btn-primary rounded-md w-100"
-                            type="submit"
-                          >
-                            Sign in
-                          </button>
+                        <a
+                          /* onClick={} */
+                          className="btn btn-primary rounded-md w-100"
+                        >
+                              Sign In
+                         </a>
                         </div>
                         {/* end col */}
 

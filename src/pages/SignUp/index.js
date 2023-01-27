@@ -122,12 +122,12 @@ const SignUp = () => {
                         {/* end col */}
 
                         <div className="col-lg-12">
-                          <button
-                            className="btn btn-primary rounded-md w-100"
-                            onClick={register}
-                          >
-                            Register
-                          </button>
+                        <a
+                              onClick={register}
+                              className="btn btn-primary rounded-md w-100"
+                            >
+                              Register
+                         </a>
                         </div>
                         {/* end col */}
 
