@@ -30,5 +30,3 @@ export const app = initializeAppIfNecessary();
 export const auth = getAuth(app);
 
 export const db = getFirestore(app)
-
-export const db = getFirestore(app)
