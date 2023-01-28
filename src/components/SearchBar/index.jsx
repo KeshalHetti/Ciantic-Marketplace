@@ -4,6 +4,36 @@ import TextField from '@mui/material/TextField';
 import Fuse from 'fuse.js';
 import {db} from '../../firebase-config'
 import { collection, getDocs } from "firebase/firestore"; 
+import { alpha, styled } from '@mui/material/styles';
+
+
+const CssTextField = styled(TextField)({
+    "& label": {
+        color: "white",
+        fontWeight: 700,
+        },
+      '& label.Mui-focused': {
+        color: 'white',
+      },
+      '& .MuiInputBase-root': {
+        color: 'white',
+      },
+      '& .MuiInput-underline:after': {
+        borderBottomColor: 'white',
+      },
+      '& .MuiOutlinedInput-root': {
+        '& fieldset': {
+          borderColor: 'white',
+        },
+        '&:hover fieldset': {
+          borderColor: 'white',
+        },
+        '& .Mui-focused fieldset': {
+          borderColor: 'white',
+        },
+      },
+    });
+    
 
 const SearchBar = () => {
     const [search, setSearch] = useState('');
@@ -41,13 +71,15 @@ const SearchBar = () => {
 
     return (       
     <div>
-        <TextField
-                id="outlined-name"
+        <CssTextField
+                id="custom-css-outlined-input"
                 label="Search an item"
                 value={search}
                 onChange={handleChange}
+                fullWidth
             />
             <h4>{search.length > 3 && mapResults}</h4>
+
     </div>
   )
 }
