@@ -246,7 +246,7 @@ const Navbar = () => {
 
           {/*Login button Start*/}
           <ul className="buy-button list-inline mb-0">
-            <li className="list-inline-item mb-0 me-1">
+            <li className="list-inline-item mb-0 me-3">
               <div className="dropdown">
                 <button
                   type="button"
@@ -295,6 +295,32 @@ const Navbar = () => {
               </div>
             </li>
 
+            <li className="list-inline-item mb-10 me-1" >
+            <a
+              href="/login"
+              onClick={e => {
+                e.preventDefault()
+                navigate('/login')
+              }}
+              /* className="sub-menu-item" */
+            >
+              Sign in
+            </a>
+            </li>
+
+            <li className="list-inline-item mb-10 me-1" >
+            <a
+              href="/signup"
+              onClick={e => {
+                e.preventDefault()
+                navigate('/signup')
+              }}
+              /* className="sub-menu-item" */
+            >
+              / Sign Up
+            </a>
+            </li>
+
             {/* Start Metamask Wallet */}
 
             {/* <li className="list-inline-item mb-0 me-1">
@@ -323,8 +349,8 @@ const Navbar = () => {
 
             {/* End Metamask Wallet */}
 
-            <li className="list-inline-item mb-0">
-              <div className="dropdown dropdown-primary">
+            {/*<li className="list-inline-item mb-0">
+               <div className="dropdown dropdown-primary">
                 <button
                   type="button"
                   className="btn btn-pills dropdown-toggle p-0"
@@ -408,8 +434,8 @@ const Navbar = () => {
                     </a>
                   </div>
                 </div>
-              </div>
-            </li>
+              </div> 
+            </li>*/}
           </ul>
           {/*Login button End*/}
 
@@ -558,86 +584,6 @@ const Navbar = () => {
                         >
                           {' '}
                           Become Creator
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="has-submenu parent-menu-item">
-                    <a href="" onClick={e => mobileHandler(e, 'auth')}>
-                      {' '}
-                      Auth Pages{' '}
-                    </a>
-                    <span className="submenu-arrow"></span>
-                    <ul
-                      className={`submenu ${mobile.includes('auth') ? 'open' : ''
-                        }`}
-                    >
-                      <li>
-                        <a
-                          href="/login"
-                          onClick={e => {
-                            e.preventDefault()
-                            setTimeout(() => {
-                              activateMenu()
-                              toggleSwitcher(false)
-                            }, 1000)
-                            navigate('/login')
-                          }}
-                          className="sub-menu-item"
-                        >
-                          {' '}
-                          Login
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/signup"
-                          onClick={e => {
-                            e.preventDefault()
-                            setTimeout(() => {
-                              activateMenu()
-                              toggleSwitcher(false)
-                            }, 1000)
-                            navigate('/signup')
-                          }}
-                          className="sub-menu-item"
-                        >
-                          {' '}
-                          Signup
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/reset-password"
-                          onClick={e => {
-                            e.preventDefault()
-                            setTimeout(() => {
-                              activateMenu()
-                              toggleSwitcher(false)
-                            }, 1000)
-                            navigate('/reset-password')
-                          }}
-                          className="sub-menu-item"
-                        >
-                          {' '}
-                          Forgot Password
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/lock-screen"
-                          onClick={e => {
-                            e.preventDefault()
-                            setTimeout(() => {
-                              activateMenu()
-                              toggleSwitcher(false)
-                            }, 1000)
-                            navigate('/lock-screen')
-                          }}
-                          className="sub-menu-item"
-                        >
-                          {' '}
-                          Lock Screen
                         </a>
                       </li>
                     </ul>
