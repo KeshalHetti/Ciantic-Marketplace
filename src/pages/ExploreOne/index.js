@@ -3,11 +3,9 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import SearchBar from '../../components/SearchBar'
-import Box from '@mui/material/Box';
 import {
-  bgImage, item1, item2, item3, item4, item5, item6, item7, item12,
-  gif1, gif2, gif3, gif4, gif5, gif6,
-  cta, client05, client06, client08
+  bgImage, item1, item2, item3, item4, item5, item6, item7,
+  cta
 } from '../../components/imageImport'
 
 const ExploreOne = () => {
@@ -18,40 +16,40 @@ const ExploreOne = () => {
       title: 'Iphone 14 Pro Max',
       price: 600000,
       quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
+      type: 'electronics',
+      filter: ['all', 'electronics'],
     },
     {
       image: item3,
       title: 'Samsung Galaxy S22 Ultra',
       price: 400000,
       quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
+      type: 'electronics',
+      filter: ['all', 'electronics'],
     },
     {
       image: item4,
       title: 'Sony a7 III ILCE7M3/B',
       price: 800000,
       quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
+      type: 'electronics',
+      filter: ['all', 'electronics'],
     },
     {
       image: item5,
       title: 'Samsung 85-Inch QN900B Neo QLED 8K',
       price: 1636920,
       quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
+      type: 'electronics',
+      filter: ['all', 'electronics'],
     },
     {
       image: item6,
       title: 'Google Nest Cam Outdoor or Indoor',
       price: 300000,
       quantity: '15 In Stock',
-      type: 'Arts',
-      filter: ['all', 'art'],
+      type: 'electronics',
+      filter: ['all', 'electronics'],
     },
     {
       image: item1,
@@ -207,10 +205,10 @@ const ExploreOne = () => {
                     <i className="uil uil-browser"></i> All
                   </li>
                   <li
-                    className={`list-inline-item categories position-relative text-dark ${type === 'games' ? 'active' : ''
+                    className={`list-inline-item categories position-relative text-dark ${type === 'electronics' ? 'active' : ''
                       }`}
-                    // data-group="games"
-                    onClick={() => setFilter('games')}
+                    // data-group="electronics"
+                    onClick={() => setFilter('electronics')}
                   >
                   Electronics
                   </li>
