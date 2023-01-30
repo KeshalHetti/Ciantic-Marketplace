@@ -77,38 +77,6 @@ const DarkVersionOne = () => {
         img4: c12,
         client: client12,
       },
-      {
-        title: 'Household',
-        img1: c2,
-        img2: c5,
-        img3: c6,
-        img4: c7,
-        client: client10,
-      },
-      {
-        title: 'Fashion',
-        img1: c5,
-        img2: c6,
-        img3: c2,
-        img4: c7,
-        client: client09,
-      },
-      {
-        title: 'Workshop Equipment',
-        img1: c11,
-        img2: c9,
-        img3: c8,
-        img4: c12,
-        client: client11,
-      },
-      {
-        title: 'Health Care',
-        img1: c12,
-        img2: c1,
-        img3: c4,
-        img4: c10,
-        client: client03,
-      },
     ]
 
   /* const [allData, setAllData] = useState(AuctionData)
@@ -266,9 +234,9 @@ const DarkVersionOne = () => {
         style={{ background: `url(${bgImage}) background-position: center center` }}
       // style="background-image: url('images/bg/bg01.png'); background-position: center center;"
       >
-        <div className="bg-overlay"> {/* Note: Class to add a gradient on top. (className="bg-overlay bg-gradient-primary opacity-8") */}
+        <div className="bg-overlay"> {/* Note: Class to add a gradient onlay bg-gradient-primary opacity-8") */}
         <img src={bg02} className="img-fluid" alt="" />
-        </div>
+        </div> 
         <div className="container mt-100">
           <div className="row align-items-center">
             <div className="col-lg-7 col-md-6">
@@ -304,9 +272,9 @@ const DarkVersionOne = () => {
             </div>
             {/*end slide*/}
 
-            <div className="col-lg-5 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+            {/* <div className="col-lg-5 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
               <img src={cianticMarketLogoLarge} className="img-fluid" alt="" />
-            </div>
+            </div> */}
             {/*end slide*/}
           </div>
           {/*end row*/}
@@ -392,9 +360,9 @@ const DarkVersionOne = () => {
                     e.preventDefault()
                     navigate('/explore-one')
                   }}
-                  className="btn btn-primary rounded-md"
+                  className="btn btn-primary rounded-md w-20"
                 >
-                  <i className="uil uil-process mdi-spin me-1"></i> Visit Markeplace
+                  <i className="uil uil-process mdi-spin me-1"></i> View More in Our Markeplace!
                 </a>
               </div>
             </div>
