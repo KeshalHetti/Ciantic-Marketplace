@@ -343,35 +343,7 @@ const Navbar = () => {
             </li>
             <a onClick={logout}> Sign Out </a>
 
-            {/* Start Metamask Wallet */}
-
-            {/* <li className="list-inline-item mb-0 me-1">
-              {becomeUrl ? (
-                <a
-                  id="connectWallet"
-                  className="btn btn-icon btn-pills btn-primary"
-                >
-                  <i className="uil uil-wallet fs-6"></i>
-                </a>
-              ) : (
-                <p id="connectWallet" onClick={_handleConnectWallet}>
-                  <span className="btn-icon-dark">
-                    <span className="btn btn-icon btn-pills btn-primary">
-                      <i className="uil uil-wallet fs-6"></i>
-                    </span>
-                  </span>
-                  <span className="btn-icon-light">
-                    <span className="btn btn-icon btn-pills btn-light">
-                      <i className="uil uil-wallet fs-6"></i>
-                    </span>
-                  </span>
-                </p>
-              )}
-            </li> */}
-
-            {/* End Metamask Wallet */}
-
-            {/*<li className="list-inline-item mb-0">
+            <li className="list-inline-item mb-0">
                <div className="dropdown dropdown-primary">
                 <button
                   type="button"
@@ -457,7 +429,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </div> 
-            </li>*/}
+            </li>
           </ul>
           {/*Login button End*/}
 
