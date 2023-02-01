@@ -1,4 +1,4 @@
-import {React, useState} from 'react'
+import {React, useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'
 import { cianticLogo } from '../../components/imageImport'
@@ -15,6 +15,14 @@ const SignUp = () => {
   const navigate = useNavigate()
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
+  const [user, setUser] = useState({});
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+  }, []);
+
 
   const register = async () => {
     try {
@@ -129,6 +137,7 @@ const SignUp = () => {
                               Register
                          </a>
                         </div>
+                        {user && user.email && navigate('/')}
                         {/* end col */}
 
                         <div className="col-12 text-center mt-4">

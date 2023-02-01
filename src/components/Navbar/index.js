@@ -1,7 +1,14 @@
 import React, { useState, useCallback, useEffect, useMemo } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { character, client01, lightLogo, logoDark } from '../imageImport'
-
+import { auth } from '../../firebase-config'
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+  deleteUser
+} from "firebase/auth";
 const Navbar = () => {
   const [myPublicAddress, setMyPublicAddress] = useState('qhut0...hfteh45')
   const location = useLocation()
@@ -20,6 +27,14 @@ const Navbar = () => {
   ]
   const becomeUrl = templatePage.includes(location?.pathname)
   const [mobile, setMobile] = useState([])
+  const [user, setUser] = useState({});
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+  }, []);
+
   const toggleSwitcher = () => {
     var i = document.getElementById('style-switcher')
     if (i) {
@@ -175,6 +190,10 @@ const Navbar = () => {
       isOpen.style.display = "block";
     }
   };
+
+  const logout = async () => {
+    await signOut(auth);
+  };
   return (
     <>
       {/* Navbar STart */}
@@ -294,9 +313,9 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-
+            
             <li className="list-inline-item mb-10 me-1" >
-            <a
+            {user ? user.email : <a
               href="/login"
               onClick={e => {
                 e.preventDefault()
@@ -305,11 +324,13 @@ const Navbar = () => {
               /* className="sub-menu-item" */
             >
               Sign in
-            </a>
+            </a>}
+
             </li>
 
             <li className="list-inline-item mb-10 me-1" >
-            <a
+            
+            {!user && <a
               href="/signup"
               onClick={e => {
                 e.preventDefault()
@@ -318,8 +339,9 @@ const Navbar = () => {
               /* className="sub-menu-item" */
             >
               / Sign Up
-            </a>
+            </a>}
             </li>
+            <a onClick={logout}> Sign Out </a>
 
             {/* Start Metamask Wallet */}
 
