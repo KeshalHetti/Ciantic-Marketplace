@@ -391,23 +391,6 @@ const Navbar = () => {
                       </span>{' '}
                       Profile
                     </a>
-                    <a
-                      className="dropdown-item small fw-semibold text-dark d-flex align-items-center"
-                      href="/creator-profile-edit"
-                      onClick={e => {
-                        e.preventDefault()
-                        setTimeout(() => {
-                          activateMenu()
-                          toggleSwitcher(false)
-                        }, 1000)
-                        navigate('/creator-profile-edit')
-                      }}
-                    >
-                      <span className="mb-0 d-inline-block me-1">
-                        <i className="uil uil-cog align-middle h6 mb-0 me-1"></i>
-                      </span>{' '}
-                      Settings
-                    </a>
                     <div className="dropdown-divider border-top"></div>
                     <a
                       className="dropdown-item small fw-semibold text-dark d-flex align-items-center"
