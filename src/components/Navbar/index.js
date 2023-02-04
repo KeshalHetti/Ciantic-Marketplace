@@ -548,19 +548,19 @@ const Navbar = () => {
                       </li>
                       <li>
                         <a
-                          href="/become-creator"
+                          href="/upload-work"
                           onClick={e => {
                             e.preventDefault()
                             setTimeout(() => {
                               activateMenu()
                               toggleSwitcher(false)
                             }, 1000)
-                            navigate('/become-creator')
+                            navigate('/upload-work')
                           }}
                           className="sub-menu-item"
                         >
                           {' '}
-                          Become Creator
+                          Sell Items
                         </a>
                       </li>
                     </ul>
