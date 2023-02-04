@@ -9,7 +9,7 @@ import Navbar from '../../components/Navbar'
 import {
   client01, client02, client03, client04, client05, client06,
   client09, client10, client11, client12, client13, bgImage,bg02, cianticMarketLogoLarge,
-  c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15,
+  c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15,c16, c17
 } from '../../components/imageImport'
 
 const DarkVersionOne = () => {
@@ -55,8 +55,8 @@ const DarkVersionOne = () => {
       {
         title: 'All',
         img1: c3,
-        img2: c1,
-        img3: c4,
+        img2: c11,
+        img3: c8,
         img4: c10,
         client: client01,
       },
@@ -71,6 +71,30 @@ const DarkVersionOne = () => {
       },
       {
         title: 'Software',
+        img1: c8,
+        img2: c2,
+        img3: c5,
+        img4: c7,
+        client: client12,
+      },
+      {
+        title: 'Household',
+        img1: c13,
+        img2: c9,
+        img3: c11,
+        img4: c12,
+        client: client12,
+      },
+      {
+        title: 'Fashion',
+        img1: c15,
+        img2: c14,
+        img3: c16,
+        img4: c17,
+        client: client12,
+      },
+      {
+        title: 'Workshop Equipment',
         img1: c8,
         img2: c9,
         img3: c11,
