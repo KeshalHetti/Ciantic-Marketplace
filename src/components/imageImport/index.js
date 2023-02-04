@@ -41,6 +41,8 @@ import c12 from '../../assets/images/collection/12.jpg'
 import c13 from '../../assets/images/collection/13.jpg'
 import c14 from '../../assets/images/collection/14.jpg'
 import c15 from '../../assets/images/collection/15.jpg'
+import c16 from '../../assets/images/collection/16.jpg'
+import c17 from '../../assets/images/collection/17.jpg'
 
 import item1 from '../../assets/images/items/1.png'
 import item2 from '../../assets/images/items/2.jpg'
@@ -155,7 +157,7 @@ export {
   bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9, bg10, bg11, bg12,
   client01, client02, client03, client04, client05, client06, client07, client08,
   client09, client10, client11, client12, client13,
-  c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15,
+  c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17,
   item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12, item13, item14,
   item16, item17, item18, item19, item20, item21, item22, item23, item24, item25, item26, item27, item28, item29,
   gif1, gif2, gif3, gif4, gif5, gif6, gif7, gif8, gif9, gif10,
