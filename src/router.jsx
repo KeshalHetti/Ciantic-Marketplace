@@ -13,7 +13,6 @@ import Faqs from './pages/Faqs'
 import Contact from './pages/Contact'
 import UploadWork from './pages/UploadWork'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import BecomeCreator from './pages/BecomeCreator'
 import CreateProfile from './pages/CreatorProfile'
 import Wallet from './pages/Walllet'
 import Activity from './pages/Activity'
@@ -52,7 +51,6 @@ export default function Router() {
         {/*page routes  */}
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/upload-work" element={<UploadWork />} />
-        <Route exact path="/become-creator" element={<BecomeCreator />} />
         <Route exact path="/creator-profile" element={<CreateProfile />} />
         <Route exact path="/creator-profile-edit" element={<CreatorProfileEdit />} />
         <Route exact path="/wallet" element={<Wallet />} />
