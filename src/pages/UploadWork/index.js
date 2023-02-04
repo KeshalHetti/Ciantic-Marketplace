@@ -44,7 +44,7 @@ const UploadWork = () => {
                   Upload Your Work
                 </h5>
                 <p className="text-white-50 para-desc mx-auto mb-0">
-                  Add your digital art and work
+                  Add your items to Sell to Ciantic Marketplace!
                 </p>
               </div>
             </div>
@@ -70,7 +70,7 @@ const UploadWork = () => {
                   </a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
-                  FAQs
+                  Seller Page
                 </li>
               </ul>
             </nav>
@@ -183,7 +183,7 @@ const UploadWork = () => {
                   <div className="col-lg-5">
                     <div className="d-grid">
                       <p className="fw-semibold mb-4">
-                        Upload your ART here, Please click "Upload Image"
+                        Upload your Item here, Please click "Upload Image"
                         Button.
                       </p>
                       <div className="preview-box d-block justify-content-center rounded-md shadow overflow-hidden bg-light text-muted p-2 text-center small">
@@ -213,7 +213,7 @@ const UploadWork = () => {
                         <div className="row">
                           <div className="col-12 mb-4">
                             <label className="form-label fw-bold">
-                              Art Title <span className="text-danger">*</span>
+                              Item Name <span className="text-danger">*</span>
                             </label>
                             <input
                               name="name"
@@ -254,19 +254,24 @@ const UploadWork = () => {
                           <div className="col-md-6 mb-4">
                             <label className="form-label fw-bold">
                               {' '}
-                              Rate :{' '}
+                              Price :{' '}
                             </label>
                             <input
                               name="time"
                               type="text"
                               className="form-control"
                               id="time"
-                              defaultValue="0.004ETH"
+                              defaultValue="LKR"
                             />
                           </div>
                           {/*end col*/}
 
+                          <div className="dropdown-divider border-top"></div>
+                          <br/>
                           <div className="col-12">
+                            <small className="text-muted">Note: Fill the below only if it's an Auction Item</small>
+                            <br/>
+                            <br/>
                             <h6>Auction :</h6>
                           </div>
 
@@ -303,7 +308,7 @@ const UploadWork = () => {
                               type="submit"
                               className="btn btn-primary rounded-md"
                             >
-                              Create Item
+                              Upload Item
                             </button>
                           </div>
                           {/*end col*/}
