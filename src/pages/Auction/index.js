@@ -97,7 +97,7 @@ const Auction = () => {
                   Live Auctions
                 </h5>
                 <p className="text-white-50 para-desc mx-auto mb-0">
-                  Please check live auctions of digital arts
+                  Welcome to Ciantic Marketplace's Live Auction
                 </p>
               </div>
             </div>
@@ -156,23 +156,6 @@ const Auction = () => {
               return (
                 <div className="col" key={index}>
                   <div className="card nft-items nft-primary nft-auction rounded-md shadow overflow-hidden mb-1 p-3">
-                    <div className="d-flex align-items-center justify-content-between">
-                      <div className="d-flex align-items-center">
-                        <img
-                          src={data?.client}
-                          alt="user"
-                          className="avatar avatar-sm-sm img-thumbnail border-0 shadow-sm rounded-circle"
-                        />
-                        <a
-                          href=""
-                          onClick={e => e.preventDefault()}
-                          className="text-dark small creator-name h6 mb-0 ms-2"
-                        >
-                          @{data?.author}
-                        </a>
-                      </div>
-                    </div>
-
                     <div className="nft-image rounded-md mt-3 position-relative overflow-hidden">
                       <a
                         href="/item-detail-two"
