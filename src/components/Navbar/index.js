@@ -28,6 +28,8 @@ const Navbar = () => {
   const becomeUrl = templatePage.includes(location?.pathname)
   const [mobile, setMobile] = useState([])
   const [user, setUser] = useState({});
+  const [loginEmail, setLoginEmail] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
 
   useEffect(() => {
     onAuthStateChanged(auth, (currentUser) => {
@@ -191,6 +193,20 @@ const Navbar = () => {
     }
   };
 
+  const login = async () => {
+    try {
+      const user = await signInWithEmailAndPassword(
+        auth,
+        loginEmail,
+        loginPassword
+      );
+      console.log(user);
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+
   const logout = async () => {
     await signOut(auth);
   };
@@ -341,7 +357,7 @@ const Navbar = () => {
               / Sign Up
             </a>}
             </li>
-            <a onClick={logout}> Sign Out </a>
+            
 
             <li className="list-inline-item mb-0">
                <div className="dropdown dropdown-primary">
@@ -394,20 +410,20 @@ const Navbar = () => {
                     <div className="dropdown-divider border-top"></div>
                     <a
                       className="dropdown-item small fw-semibold text-dark d-flex align-items-center"
-                      href="/lock-screen"
+                      href="/"
                       onClick={e => {
                         e.preventDefault()
                         setTimeout(() => {
                           activateMenu()
                           toggleSwitcher(false)
                         }, 1000)
-                        navigate('/lock-screen')
+                        navigate('/')
                       }}
                     >
                       <span className="mb-0 d-inline-block me-1">
                         <i className="uil uil-sign-out-alt align-middle h6 mb-0 me-1"></i>
                       </span>{' '}
-                      Logout
+                      <a onClick={logout}> Logout </a>
                     </a>
                   </div>
                 </div>

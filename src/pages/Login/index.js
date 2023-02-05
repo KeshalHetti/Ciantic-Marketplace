@@ -1,9 +1,40 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'
 import { whiteLogo } from '../../components/imageImport'
+import { auth } from "../../firebase-config";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+  deleteUser,
+} from "firebase/auth";
 
 const Login = () => {
+  const [loginEmail, setLoginEmail] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
+  const [user, setUser] = useState({});
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+  }, []);
+
+  const login = async () => {
+    try {
+      const user = await signInWithEmailAndPassword(
+        auth,
+        loginEmail,
+        loginPassword
+      );
+      console.log(user);
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
   const navigate = useNavigate()
   return (
     <>
@@ -52,6 +83,9 @@ const Login = () => {
                               className="form-control"
                               id="LoginEmail"
                               placeholder="name@example.com"
+                              onChange={(event) => {
+                                setLoginEmail(event.target.value);
+                              }}
                             />
                             <label htmlFor="LoginEmail">Email Address:</label>
                           </div>
@@ -65,6 +99,9 @@ const Login = () => {
                               className="form-control"
                               id="LoginPassword"
                               placeholder="Password"
+                              onChange={(event) => {
+                                setLoginPassword(event.target.value);
+                              }}
                             />
                             <label htmlFor="LoginPassword">Password:</label>
                           </div>
@@ -105,13 +142,12 @@ const Login = () => {
                         </div>
                         {/* end col */}
                         <div className="col-lg-12">
-                        <a
-                          /* onClick={} */
-                          className="btn btn-primary rounded-md w-100"
-                        >
+
+                        <a className="btn btn-primary rounded-md w-100" onClick={login}>
                               Sign In
                          </a>
                         </div>
+                        {user && user.email && navigate('/')}
                         {/* end col */}
 
                         <div className="col-12 text-center mt-4">
