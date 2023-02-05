@@ -196,7 +196,7 @@ const Contact = () => {
                       navigate('/index')
                     }}
                   >
-                    Cianitc
+                    Ciantic
                   </a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
@@ -237,7 +237,7 @@ const Contact = () => {
                 <div className="content mt-4 px-4">
                   <h5 className="fw-bold">Phone</h5>
                   <p className="text-muted">
-                    Start working with Cianitc that can provide everything
+                    Start working with Ciantic that can provide everything
                   </p>
                   <a href="tel:+152534-468-854" className="text-primary">
                     +94 000 000 000
@@ -255,7 +255,7 @@ const Contact = () => {
                 <div className="content mt-4 px-4">
                   <h5 className="fw-bold">Email</h5>
                   <p className="text-muted">
-                    Start working with Cianitc that can provide everything
+                    Start working with Ciantic that can provide everything
                   </p>
                   <a href="mailto:contact@example.com" className="text-primary">
                     contact@example.com

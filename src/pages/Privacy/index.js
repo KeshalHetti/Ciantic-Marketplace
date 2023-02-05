@@ -45,7 +45,7 @@ const Privacy = () => {
                       navigate('/index')
                     }}
                   >
-                    Cianitc
+                    Ciantic
                   </a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">

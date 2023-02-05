@@ -69,7 +69,7 @@ const Maintenance = () => {
                 <div className="text-center">
                   <small className="mb-0 text-light title-dark">
                     © <script>document.write(new Date().getFullYear())</script>{' '}
-                    Cianitc. Design & Develop with{' '}
+                    Ciantic. Design & Develop with{' '}
                     <i className="mdi mdi-heart text-danger"></i> by{' '}
                     
                     .

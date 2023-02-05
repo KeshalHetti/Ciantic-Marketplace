@@ -44,7 +44,7 @@ const Support = () => {
                       navigate('/index')
                     }}
                   >
-                    Cianitc
+                    Ciantic
                   </a>
                 </li>
                 <li className="breadcrumb-item">

@@ -701,7 +701,7 @@ const ItemDetailOne = () => {
                 <a href="" className="text-reset">
                   <u>Iphone 14 Pro Max</u>
                 </a>{' '}
-                from Cianitc Market
+                from Ciantic Market
               </h6>
 
               <ul className="rounded-md shadow p-4 border list-unstyled mt-4">

@@ -45,7 +45,7 @@ const Terms = () => {
                       navigate('/index')
                     }}
                   >
-                    Cianitc
+                    Ciantic
                   </a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
@@ -215,7 +215,7 @@ const Terms = () => {
                           aria-expanded="false"
                           aria-controls="collapseTwo"
                         >
-                          Do I need a designer to use Cianitc ?
+                          Do I need a designer to use Ciantic ?
                         </button>
                       </h2>
                       <div

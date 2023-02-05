@@ -135,7 +135,7 @@ const ExploreOne = () => {
                   Marketplace
                 </h5>
                 <p className="text-white-50 para-desc mx-auto mb-0">
-                  Explore Cianitc Marketplace!
+                  Explore Ciantic Marketplace!
                 </p>
               </div>
             </div>
@@ -157,7 +157,7 @@ const ExploreOne = () => {
                       navigate('/index')
                     }}
                   >
-                    Cianitc Market
+                    Ciantic Market
                   </a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">

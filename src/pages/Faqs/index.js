@@ -49,7 +49,7 @@ const Faqs = () => {
                       navigate('/index')
                     }}
                   >
-                    Cianitc
+                    Ciantic
                   </a>
                 </li>
                 <li className="breadcrumb-item">
@@ -111,7 +111,7 @@ const Faqs = () => {
                   </li>
                   <li className={`navbar-item mt-3 p-0 ${active === "3" ? "active" : ''}`} onClick={() => setActive('3')}>
                     <a href="#use" className="h6 text-dark navbar-link">
-                      Using Cianitc NFT
+                      Using Ciantic NFT
                     </a>
                   </li>
                   <li className={`navbar-item mt-3 p-0 ${active === "4" ? "active" : ''}`} onClick={() => setActive('4')}>
@@ -169,7 +169,7 @@ const Faqs = () => {
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      Do I need a designer to use Cianitc ?
+                      Do I need a designer to use Ciantic ?
                     </button>
                   </h2>
                   <div
@@ -287,7 +287,7 @@ const Faqs = () => {
                       aria-expanded="false"
                       aria-controls="collapsesix"
                     >
-                      Do I need a designer to use Cianitc ?
+                      Do I need a designer to use Ciantic ?
                     </button>
                   </h2>
                   <div
@@ -362,7 +362,7 @@ const Faqs = () => {
               </div>
 
               <div className="section-title mt-5" id="use">
-                <h5>Using Cianitc NFT</h5>
+                <h5>Using Ciantic NFT</h5>
               </div>
 
               <div className="accordion mt-4 pt-2" id="paymentquestion">
@@ -405,7 +405,7 @@ const Faqs = () => {
                       aria-expanded="false"
                       aria-controls="collapseten"
                     >
-                      Do I need a designer to use Cianitc ?
+                      Do I need a designer to use Ciantic ?
                     </button>
                   </h2>
                   <div
@@ -523,7 +523,7 @@ const Faqs = () => {
                       aria-expanded="false"
                       aria-controls="collapsefourteen"
                     >
-                      Do I need a designer to use Cianitc ?
+                      Do I need a designer to use Ciantic ?
                     </button>
                   </h2>
                   <div
