@@ -231,28 +231,6 @@ const Navbar = () => {
               }, 1000)
             }}
           >
-            {/* <span className="">
-              <img
-                src={logoDark}
-                height="26"
-                className={becomeUrl ? 'logo-light-mode' : 'l-dark'}
-                alt=""
-              />
-              <img
-                src={lightLogo}
-                height="26"
-                className={becomeUrl ? 'logo-dark-mode' : 'l-light'}
-                alt=""
-              />
-            </span> */}
-            {/* {!becomeUrl && (
-              <img
-                src={lightLogo}
-                height="26"
-                className="logo-dark-mode"
-                alt=""
-              />
-            )} */}
           </a>
           {/* Logo end*/}
 
