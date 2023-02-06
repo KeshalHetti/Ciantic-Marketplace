@@ -1,9 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
 import { bg01, client01 } from '../../components/imageImport'
 import { FiCamera } from 'react-icons/fi'
+import { auth } from "../../firebase-config";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+  deleteUser,
+  reauthenticateWithCredential,
+  EmailAuthProvider
+} from "firebase/auth";
 
 const CreatorProfileEdit = () => {
   const navigate = useNavigate()
@@ -16,12 +26,37 @@ const CreatorProfileEdit = () => {
   const [job, setJob] = useState(true)
   const [unsubscribe, setUnsubscribe] = useState(true)
 
+  const [reauthPassword, setReauthPassword] = useState("");
+  const [isShown, setIsShown] = useState(false);
+
   const loadFile = function (event) {
     var image = document.getElementById(event.target.name)
     image.src = URL.createObjectURL(event.target.files[0])
   }
+  const user = auth.currentUser
+  const handleClick = () => {
+    setIsShown(current => !current);
 
+  };
+
+  const credential = EmailAuthProvider.credential(
+    auth.currentUser.email,
+    reauthPassword
+)
+
+const reauth = async () => {
+  await reauthenticateWithCredential(auth.currentUser, credential)
+  deleteUser(user).then(() => {
+    console.log(user)
+    navigate('/')
+  }).catch((error) => {
+    console.log(error)
+  });
+}
+
+  
   return (
+    
     <>
       {/* Navbar */}
       <Navbar />
@@ -374,7 +409,13 @@ const CreatorProfileEdit = () => {
                     "Delete" button
                   </h6>
                   <div className="mt-4">
-                    <button className="btn btn-danger">Delete Account</button>
+                    <a className="btn btn-danger" onClick={handleClick}>Delete Account</a>
+                    {isShown && (<div>
+                      <input placeholder='Password: ' onChange={(event) => {
+                        setReauthPassword(event.target.value);
+                        }}/>
+                      <a className="btn btn-success" onClick={reauth}>Delete Account</a>
+                      </div>)}
                   </div>
                   {/*end col*/}
                 </div>
