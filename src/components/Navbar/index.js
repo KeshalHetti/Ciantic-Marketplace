@@ -368,16 +368,15 @@ const Navbar = () => {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  <img
+                  {user && user.email && <img
                     src={client01}
                     className="rounded-pill avatar avatar-sm-sm"
                     alt=""
-                  />
+                  />}
                 </button>
                 <div
                   className="dropdown-menu dd-menu dropdown-menu-end bg-white shadow border-0 mt-3 pb-3 pt-0 overflow-hidden rounded"
-                  style={{ minWidth: 200 }}
-                >
+                  style={{ minWidth: 200 }}>
                   <div className="position-relative">
                     <div className="pt-5 pb-3 bg-gradient-primary"></div>
                     <div className="px-3">
@@ -427,7 +426,7 @@ const Navbar = () => {
                     </a>
                   </div>
                 </div>
-              </div> 
+              </div>
             </li>
           </ul>
           {/*Login button End*/}
