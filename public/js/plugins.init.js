@@ -594,7 +594,7 @@ try {
 //=========================================//
 /*            11) Connect wallet           */
 //=========================================//
-;(async function () {
+/* ;(async function () {
   try {
     //Basic Actions Section
     const onboardButton = document.getElementById('connectWallet')
@@ -656,7 +656,7 @@ try {
     onboardButton.addEventListener('click', onClickConnect)
     closeModalBtn.addEventListener('click', closeModal)
   } catch (error) {}
-})()
+})() */
 
 //=========================================//
 /*/*            12) Back Button            */

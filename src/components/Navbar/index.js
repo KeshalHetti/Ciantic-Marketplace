@@ -15,15 +15,7 @@ const Navbar = () => {
   const navigate = useNavigate()
   const url = useMemo(() => location?.pathname === '/blog-detail', [])
   const templatePage = [
-    '/become-creator',
-    '/creator-profile',
     '/item-detail-one',
-    '/index-two',
-    '/index-four',
-    '/index-five',
-    '/index-five-rtl',
-    '/index-four-rtl',
-    '/index-two-rtl'
   ]
   const becomeUrl = templatePage.includes(location?.pathname)
   const [mobile, setMobile] = useState([])
@@ -71,52 +63,6 @@ const Navbar = () => {
     const { ethereum } = window
     return Boolean(ethereum && ethereum.isMetaMask)
   }, [])
-
-  const checkWalletConnet = useCallback(async () => {
-    if (isMetaMaskInstalled()) {
-      const accounts = await window.ethereum.request({ method: 'eth_accounts' })
-      if (!!accounts[0]) {
-        const walletAddress =
-          accounts[0].split('').slice(0, 6).join('') +
-          '...' +
-          accounts[0]
-            .split('')
-            .slice(accounts[0].length - 7, accounts[0].length)
-            .join('')
-        setMyPublicAddress(walletAddress)
-      }
-    }
-  }, [isMetaMaskInstalled])
-
-  useEffect(() => {
-    checkWalletConnet()
-  }, [checkWalletConnet])
-
-  const _handleConnectWallet = useCallback(async () => {
-    const modal = document.getElementById('modal-metamask')
-
-    if (!isMetaMaskInstalled()) {
-      //meta mask not installed
-      modal.classList.add('show')
-      modal.style.display = 'block'
-      return
-    }
-    try {
-      await window.ethereum.request({ method: 'eth_requestAccounts' })
-      const accounts = await window.ethereum.request({ method: 'eth_accounts' })
-      const walletAddress =
-        accounts[0].split('').slice(0, 6).join('') +
-        '...' +
-        accounts[0]
-          .split('')
-          .slice(accounts[0].length - 7, accounts[0].length)
-          .join('')
-      setMyPublicAddress(walletAddress)
-    } catch (error) {
-      console.error(error)
-    }
-  }, [isMetaMaskInstalled])
-
 
   const getClosest = (elem, selector) => {
 
@@ -469,23 +415,6 @@ const Navbar = () => {
                 </a>
               </li>
 
-              <li>
-                <a
-                  href="/wallet"
-                  onClick={e => {
-                    e.preventDefault()
-                    setTimeout(() => {
-                      activateMenu()
-                      toggleSwitcher(false)
-                    }, 1000)
-                    navigate('/wallet')
-                  }}
-                  className="sub-menu-item"
-                >
-                  My Cart
-                </a>
-              </li>
-
               {<li className="has-submenu parent-parent-menu-item">
                 <a href="" onClick={e => mobileHandler(e, 'pages')}>
                   More
@@ -621,137 +550,6 @@ const Navbar = () => {
                         </a>
                       </li>
                     </ul>
-                  </li>
-                  <li className="has-submenu parent-menu-item">
-                    <a href="" onClick={e => mobileHandler(e, 'help')}>
-                      {' '}
-                      Help Center
-                      {/* <span className="badge bg-warning">
-                        NEW
-                      </span>{' '} */}
-                    </a>
-                    <span className="submenu-arrow"></span>
-                    <ul
-                      className={`submenu ${mobile.includes('help') ? 'open' : ''
-                        }`}
-                    >
-                      <li>
-                        <a
-                          href="/helpcenter-overview"
-                          onClick={e => {
-                            e.preventDefault()
-                            setTimeout(() => {
-                              activateMenu()
-                              toggleSwitcher(false)
-                            }, 1000)
-                            navigate('/helpcenter-overview')
-                          }}
-                          className="sub-menu-item"
-                        >
-                          {' '}
-                          Overview
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/helpcenter-faqs"
-                          onClick={e => {
-                            e.preventDefault()
-                            setTimeout(() => {
-                              activateMenu()
-                              toggleSwitcher(false)
-                            }, 1000)
-                            navigate('/helpcenter-faqs')
-                          }}
-                          className="sub-menu-item"
-                        >
-                          {' '}
-                          FAQs
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/helpcenter-guides"
-                          onClick={e => {
-                            e.preventDefault()
-                            setTimeout(() => {
-                              activateMenu()
-                              toggleSwitcher(false)
-                            }, 1000)
-                            navigate('/helpcenter-guides')
-                          }}
-                          className="sub-menu-item"
-                        >
-                          {' '}
-                          Guides
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/helpcenter-support-request"
-                          onClick={e => {
-                            e.preventDefault()
-                            setTimeout(() => {
-                              activateMenu()
-                              toggleSwitcher(false)
-                            }, 1000)
-                            navigate('/helpcenter-support-request')
-                          }}
-                          className="sub-menu-item"
-                        >
-                          {' '}
-                          Support
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a
-                      href="/upload-work"
-                      onClick={e => {
-                        e.preventDefault()
-                        setTimeout(() => {
-                          activateMenu()
-                          toggleSwitcher(false)
-                        }, 1000)
-                        navigate('/upload-work')
-                      }}
-                      className="sub-menu-item"
-                    >
-                      Upload Works
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/terms"
-                      onClick={e => {
-                        e.preventDefault()
-                        setTimeout(() => {
-                          activateMenu()
-                          toggleSwitcher(false)
-                        }, 1000)
-                        navigate('/terms')
-                      }}
-                      className="sub-menu-item"
-                    >
-                      Terms Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/privacy"
-                      onClick={e => {
-                        e.preventDefault()
-                        setTimeout(() => {
-                          activateMenu()
-                          toggleSwitcher(false)
-                        }, 1000)
-                        navigate('/privacy')
-                      }}
-                      className="sub-menu-item"
-                    >
-                      Privacy Policy
-                    </a>
                   </li>
                   <li>
                     <a
