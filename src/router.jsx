@@ -13,15 +13,14 @@ import Faqs from './pages/Faqs'
 import Contact from './pages/Contact'
 import UploadWork from './pages/UploadWork'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import CreateProfile from './pages/CreatorProfile'
+import CreateProfile from './pages/UserProfile'
 import Wallet from './pages/Walllet'
 import Activity from './pages/Activity'
 import ItemDetailOne from './pages/ItemDetailOne'
-import ItemDetailTwo from './pages/ItemDetailTwo'
 import Auction from './pages/Auction'
 import DarkVersionOne from './pages/DarkVersionOne'
 import ExploreOne from './pages/ExploreOne'
-import CreatorProfileEdit from './pages/CreatorProfileEdit'
+import CreatorProfileEdit from './pages/EditUserProfile'
 import Terms from './pages/Terms'
 import Privacy from './pages/Privacy'
 import ChangeLog from './pages/ChangeLog'
@@ -56,7 +55,6 @@ export default function Router() {
         <Route exact path="/wallet" element={<Wallet />} />
         <Route exact path="/activity" element={<Activity />} />
         <Route exact path="/item-detail-one" element={<ItemDetailOne />} />
-        <Route exact path="/item-detail-two" element={<ItemDetailTwo />} />
         <Route exact path="/auction" element={<Auction />} />
         <Route exact path="/explore-one" element={<ExploreOne />} />
         <Route exact path="/index-dark" element={<DarkVersionOne />} />
