@@ -14,66 +14,58 @@ const Auction = () => {
 
   const AuctionData = [
     {
-      image: gif1,
-      title: 'Deep Sea Phantasy',
-      type: 'GIFs',
+      image: item1,
+      title: 'Item',
       client: client01,
       author: 'StreetBoy',
       id: 'May 29, 2022 6:0:0'
     },
     {
       image: item1,
-      title: 'CyberPrimal 042 LAN',
-      type: 'Arts',
+      title: 'Item',
       client: client09,
       author: 'PandaOne',
       id: 'June 03, 2022 5:3:1'
     },
     {
-      image: gif2,
-      title: 'Crypto Egg Stamp #5',
-      type: 'GIFs',
+      image: item1,
+      title: 'Item',
       client: client02,
       author: 'CutieGirl',
       id: 'June 10, 2022 1:0:1'
     },
     {
-      image: item2,
-      title: 'Colorful Abstract Painting',
-      type: 'Memes',
+      image: item1,
+      title: 'Item',
       client: client03,
       author: 'NorseQueen',
       id: 'June 18, 2022 1:2:1'
     },
     {
-      image: item3,
-      title: 'Liquid Forest Princess',
+      image: item1,
+      title: 'Item',
       author: 'Butterfly',
-      type: 'Illustration',
       client: client11,
       id: 'July 01, 2022 1:6:6'
     },
     {
-      image: gif3,
-      title: 'Spider Eyes Modern Art',
+      image: item1,
+      title: 'Item',
       author: 'BigBull',
-      type: 'GIFs',
       client: client04,
       id: 'July 15, 2022 2:5:5'
     },
     {
-      image: item4,
-      title: 'Synthwave Painting',
+      image: item1,
+      title: 'Item',
       author: 'Princess',
-      type: 'Games',
       client: client12,
       id: 'Aug 08, 2022 5:1:4'
     },
     {
-      image: gif4,
-      title: 'Contemporary Abstract',
+      image: item1,
+      title: 'Item',
       author: 'KristyHoney',
-      type: 'GIFs',
       client: client13,
       id: 'Aug 20, 2022 1:6:3'
     },
@@ -158,10 +150,10 @@ const Auction = () => {
                   <div className="card nft-items nft-primary nft-auction rounded-md shadow overflow-hidden mb-1 p-3">
                     <div className="nft-image rounded-md mt-3 position-relative overflow-hidden">
                       <a
-                        href="/item-detail-two"
+                        href=""
                         onClick={e => {
                           e.preventDefault()
-                          navigate('/item-detail-two')
+                          navigate('')
                         }}
                       >
                         <img src={data?.image} className="img-fluid" alt="" />
@@ -175,18 +167,6 @@ const Auction = () => {
                           {data?.type}
                         </a>
                       </div>
-                      <div className="position-absolute top-0 end-0 m-2">
-                        <span className="like-icon shadow-sm">
-                          <a
-                            href=""
-                            onClick={e => e.preventDefault()}
-                            className="text-muted icon"
-                          >
-                            <i className="mdi mdi-18px mdi-heart mb-0"></i>
-                          </a>
-                        </span>
-                      </div>
-
                       <div className="position-absolute bottom-0 start-0 m-2 h5 bg-gradient-primary text-white title-dark rounded-pill px-3">
                         <i className="uil uil-clock"></i>{' '}
                         <Countdown
@@ -202,10 +182,10 @@ const Auction = () => {
 
                     <div className="card-body content position-relative p-0 mt-3">
                       <a
-                        href="/item-detail-two"
+                        href="/"
                         onClick={e => {
                           e.preventDefault()
-                          navigate('/item-detail-two')
+                          navigate('')
                         }}
                         className="title text-dark h6"
                       >
@@ -217,13 +197,13 @@ const Auction = () => {
                           <small className="mb-0 d-block fw-semibold">
                             Current Bid:
                           </small>
-                          <small className="rate fw-bold">20.5 ETH</small>
+                          <small className="rate fw-bold">5000 LKR</small>
                         </div>
                         <a
-                          href="/item-detail-two"
+                          href="/"
                           onClick={e => {
                             e.preventDefault()
-                            navigate('/item-detail-two')
+                            navigate('')
                           }}
                           className="btn btn-icon btn-pills btn-primary"
                         >
@@ -235,22 +215,6 @@ const Auction = () => {
                 </div>
               )
             })}
-            {/*end col*/}
-          </div>
-          {/*end row*/}
-
-          <div className="row justify-content-center mt-4">
-            <div className="col">
-              <div className="text-center">
-                <a
-                  href=""
-                  onClick={e => e.preventDefault()}
-                  className="btn btn-primary rounded-md"
-                >
-                  <i className="uil uil-process mdi-spin me-1"></i> Load More
-                </a>
-              </div>
-            </div>
             {/*end col*/}
           </div>
           {/*end row*/}
